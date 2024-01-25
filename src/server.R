@@ -34,6 +34,7 @@ server <- function(input, output, session) {
   
   
   # Data Page
+<<<<<<< Updated upstream
   
   # Runs if the enter button is hit
   # Saves the data in the textbox into previewframe so
@@ -46,14 +47,19 @@ server <- function(input, output, session) {
     vals$previewframe <- parsed
   })
   
+=======
+>>>>>>> Stashed changes
   observeEvent(input$yesData, {
     
   })
   
+<<<<<<< Updated upstream
   observeEvent(input$noData, {
     
   })
   
+=======
+>>>>>>> Stashed changes
   
   # Teams Page
   observe({

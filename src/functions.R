@@ -172,7 +172,11 @@ startup <- function() {
 
 updateTeamSelect <- function() {
   
+<<<<<<< Updated upstream
 }
 
 
 
+=======
+}
+>>>>>>> Stashed changes
