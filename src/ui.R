@@ -2,7 +2,7 @@
 #                              KRAKENZERO                              #
 #                                 2023                                 #
 #                                                                      #
-#                 Created by Will Brittian of Team 6672                #
+#               Created by William Brittian of Team 6672               #
 #----------------------------------------------------------------------#
 
 
@@ -62,21 +62,26 @@ ui <- navbarPage(
   tabPanel("Teams",
            column(
              wellPanel(
-               
+               selectInput("pickTeam", 
+                           "Select a Team:", 
+                           ""),
+               actionButton("enterTeamSearch",
+                            "Enter")
              ),
              wellPanel(
-               
+               plotOutput("teamPhoto")
              ),
              width = 3
-           )
+           ),
   ),
   
   tabPanel("Matches",
-           
+           actionButton("hello", "button1"),
+           actionButton("goodbye", "button2")
   ),
   
   tabPanel("Competition",
-           
+           DTOutput("mainframeOutput")
   ),
   
   tabPanel("Graph",

@@ -24,13 +24,42 @@ source("functions.R")
 
 # Physically creating the server function
 server <- function(input, output, session) {
+  
+  # Startup
   observe({
     if(vals$startupDone == FALSE) {
       startup()
     }
   })
   
+  
+  # Data Page
+  
+  # Runs if the enter button is hit
+  # Saves the data in the textbox into previewframe so
+  # user can preview before submitting the data
+  observeEvent(input$enterData, {
+    f <- input$dataInput
+    
+    parsed <- parseData(f)
+    
+    vals$previewframe <- parsed
+  })
+  
   observeEvent(input$yesData, {
     
   })
+  
+  observeEvent(input$noData, {
+    
+  })
+  
+  
+  # Teams Page
+  observe({
+    updateSelectInput(session, "pickTeam", 
+                      choices = vals$teamframe$teamNum)
+  })
+  
+  
 }
