@@ -181,7 +181,7 @@ resetDFs <- function() {
 # This function dictates any housekeeping actions needed when starting up the app
 startup <- function() {
   # Sets the current working directory (where the app will access files)
-  setwd(path)
+ # setwd(path)
   
   
   
@@ -193,11 +193,5 @@ startup <- function() {
 
 updateTeamSelect <- function() {
   
-<<<<<<< Updated upstream
+  
 }
-
-
-
-=======
-}
->>>>>>> Stashed changes
