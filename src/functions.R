@@ -144,8 +144,29 @@ parseData <- function(data) {
     driver = c(as.integer(pData$driver[1])),
     scoutName = c(as.integer(pData$scoutName[1])),
     comments = c(as.integer(pData$comments[1]))
-    
   )
+  
+  # TODO!!!!!! 
+  # adjust to real format when Rishabh done
+  
+  
+  return(parsedData)
+}
+
+
+repeatModal <- function() {
+  modalDialog(
+    tagList(
+      h4("This looks like repeat data. Are you sure you want to add another entry to the system?"),
+      actionButton("confirmApplyRepeat", "Yes")
+    ),
+    title = "Repeat Data?"
+  )
+}
+
+
+resetDF <- function(dataframe) {
+  dataframe <- vals$templateframe
 }
 
 

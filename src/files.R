@@ -29,12 +29,6 @@ createFile <- function(fileName) {
   }
 }
 
-# Saves the data from a given dataframe in a file specified by fileName
-saveData <- function(dataframe, fileName) {
-  filePath <- paste0(path, fileName)
-  
-  write.csv(dataframe, filePath, row.names = FALSE)
-}
 
 
 # This function saves all of the current data as well as creating a backup folder
@@ -69,4 +63,35 @@ saveAllData <- function() {
   write.csv(vals$teamframe, paste0(newPath, "teamframe.csv"), row.names = FALSE)
   write.csv(vals$teammatchesframe, paste0(newPath, "teammatchesframe.csv"), row.names = FALSE)
 }
+
+
+# DATAFRAME SAVE FUNCTIONS
+
+saveMainframe <- function() {
+  filePath <- paste0(path, "mainframe.csv")
+  
+  write.csv(vals$mainframe, filePath, row.names = FALSE)
+}
+
+saveTeamframe <- function() {
+  filePath <- paste0(path, "teamframe.csv")
+  
+  write.csv(vals$teamframe, filePath, row.names = FALSE)
+}
+
+saveScheduleframe <- function() {
+  filePath <- paste0(path, "scheduleframe.csv")
+  
+  write.csv(vals$scheduleframe, filePath, row.names = FALSE)
+}
+
+saveTeammatchesframe <- function() {
+  filePath <- paste0(path, "teammatchesframe.csv")
+  
+  write.csv(vals$teammathesframe, filePath, row.names = FALSE)
+}
+
+
+
+
 

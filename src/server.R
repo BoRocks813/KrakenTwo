@@ -47,7 +47,40 @@ server <- function(input, output, session) {
   })
   
   observeEvent(input$yesData, {
-    
+    if(nrow(vals$previewframe) == 1) {
+      if(nrow(vals$mainframe) > 0) {
+        repeatFound <- FALSE
+        
+        for(row in 1:length(vals$mainframe$teamNum)) {
+          if(vals$mainframe[row, 1] == vals$previewframe[1, 1] & vals$mainframe[row, 2] == vals$previewframe[1, 2]) {
+            repeatFound <- TRUE
+            showModal(repeatModal())
+          }
+        }
+        
+        if(repeatFound == FALSE) {
+          vals$mainframe <- rbind(vals$mainframe, calcValues(vals$previewframe[1, ]))
+          
+          # TODO add findTeamIndex and matchesPlayed
+          
+          saveMainframe()
+          saveTeamframe()
+          resetDF(vals$previewframe)
+          updateTextAreaInput(session, "dataInput", value = "")
+        }
+        
+      } else {
+        # TODO: maybe add calcValues here when format set
+        vals$mainframe <- rbind(vals$mainframe, vals$previewframe[1, ])
+        
+        # TODO: add findTeamIndex and matchesPlayed (in teamframe)
+        
+        saveMainframe()
+        saveTeamframe()
+        resetDF(vals$previewframe)
+        updateTextAreaInput(session, "dataInput", value = "")
+      }
+    }
   })
   
   observeEvent(input$noData, {
