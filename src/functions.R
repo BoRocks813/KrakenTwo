@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------#
-#                              KRAKENZERO                              #
-#                                 2023                                 #
+#                               KRAKENTWO                              #
+#                                 2024                                 #
 #                                                                      #
 #                 Created by Will Brittian of Team 6672                #
 #----------------------------------------------------------------------#
@@ -12,6 +12,66 @@
 
 source("config.R")
 source("vals.R")
+
+
+
+
+
+
+calcValues <- function(df) {
+  tempDF <- data.frame(
+    teamNum = c(),
+    matchNum = c(),
+    alliance = c(),
+    driveStation = c(),
+    startLocation = c(),
+    preload = c(),
+    mobility = c(),
+    autoPickups = c(),
+    autoAmp = c(),
+    autoAmpMisses = c(),
+    autoSpeakerClose = c(),
+    autoSpeakerMid = c(),
+    autoSpeakerCloseMisses = c(),
+    autoSpeakerMidMisses = c(),
+    friendlyPickups = c(),
+    neutralPickups = c(),
+    oppPickups = c(),
+    sourcePickups = c(),
+    teleopSpeakerClose = c(),
+    teleopSpeakerMid = c(),
+    teleopSpeakerFar = c(),
+    teleopSpeakerCloseMisses = c(),
+    teleopSpeakerMidMisses = c(),
+    teloepSpeakerFarMisses = c(),
+    teleopAmp = c(),
+    teleopAmpMisses = c(),
+    teleopTrap = c(),
+    teleopTrapMisses = c(),
+    climb = c(),
+    climbTime = c(),
+    climbPartners = c(),
+    spotlight = c(),
+    shuttle = c(),
+    shooter = c(),
+    intake = c(),
+    speed = c(),
+    driver = c(),
+    scoutName = c(),
+    comments = c(),
+    
+    scoredT = numeric(1),
+    scoredA = numeric(1),
+    
+  )
+  
+  
+  
+  
+  
+  
+}
+
 
 # This is an incredibly important function that
 # sets the template for storing any dataframe in the program
@@ -87,6 +147,32 @@ getSchedule <- function() {
 }
 
 
+# Loads data for program startup
+loadData <- function() {
+  
+  if(file.exists(paste0(path, "mainframe.csv"))) {
+    vals$mainframe <- read.csv(paste0(path, "mainframe.csv"))
+  }
+  
+  if(file.exists(paste0(path, "scheduleframe.csv"))) {
+    vals$scheduleframe <- read.csv(paste0(path, "scheduleframe.csv"))
+  } else {
+    # TODO integrate TBA schedule pulling
+  }
+  
+  if(file.exists(paste0(path, "teamframe.csv"))) {
+    vals$teamframe <- read.csv(paste0(path, "teamframe.csv"))
+  } else {
+    # TODO integrate Statbotics
+  }
+  
+  if(file.exists(paste0(path, "teammatches.csv"))) {
+    vals$teammatchesframe <- read.csv(paste0(path, "teammatches.csv"))
+  }
+  
+}
+
+
 # Parses the scouting data into a format readable by Kraken
 parseData <- function(data) {
   info <- unlist(strsplit(unlist(strsplit(data, split = "|", fixed = TRUE)), "="))
@@ -104,6 +190,8 @@ parseData <- function(data) {
   
   pData <- data.frame(as.list(values))
   
+  print(pData)
+  
   parsedData <- data.frame(
     teamNum = c(as.integer(pData$teamNum[1])),
     matchNum = c(as.integer(pData$matchNum[1])),
@@ -112,7 +200,7 @@ parseData <- function(data) {
     startLocation = c(as.integer(pData$startLocation[1])),
     preload = c(as.logical(pData$preload[1])),
     mobility = c(as.logical(pData$mobility[1])),
-    autoPickups = c(pData$autoPickups[1]),
+    autoPickups = c(pData$autonPickups[1]),
     autoAmp = c(as.integer(pData$autoAmp[1])),
     autoAmpMisses = c(as.integer(pData$autoAmpMisses[1])),
     autoSpeakerClose = c(as.integer(pData$autoSpeakerClose[1])),
@@ -133,22 +221,21 @@ parseData <- function(data) {
     teleopAmpMisses = c(as.integer(pData$teleopAmpMisses[1])),
     teleopTrap = c(as.integer(pData$teleopTrap[1])),
     teleopTrapMisses = c(as.integer(pData$teleopTrapMisses[1])),
-    climb = c(as.integer(pData$climb[1])),
+    climb = c(as.logical(pData$climb[1])),
     climbTime = c(as.integer(pData$climbTime[1])),
     climbPartners = c(as.integer(pData$climbPartners[1])),
-    spotlight = c(as.integer(pData$spotlight[1])),
-    shuttle = c(as.integer(pData$shuttle[1])),
+    spotlight = c(as.logical(pData$spotlight[1])),
+    shuttle = c(as.logical(pData$shuttle[1])),
     shooter = c(as.integer(pData$shooter[1])),
     intake = c(as.integer(pData$intake[1])),
     speed = c(as.integer(pData$speed[1])),
     driver = c(as.integer(pData$driver[1])),
-    scoutName = c(as.integer(pData$scoutName[1])),
-    comments = c(as.integer(pData$comments[1]))
+    scoutName = c(pData$scoutName[1]),
+    comments = c(pData$comments[1])
   )
   
   # TODO!!!!!! 
   # adjust to real format when Rishabh done
-  
   
   return(parsedData)
 }
@@ -181,8 +268,11 @@ resetDFs <- function() {
 # This function dictates any housekeeping actions needed when starting up the app
 startup <- function() {
   # Sets the current working directory (where the app will access files)
- # setwd(path)
+  setwd(path)
   
+  
+  # Loads files on program startup
+  loadData()
   
   
   

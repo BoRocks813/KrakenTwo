@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------#
-#                              KRAKENZERO                              #
-#                                 2023                                 #
+#                               KRAKENTWO                              #
+#                                 2024                                 #
 #                                                                      #
 #                 Created by Will Brittian of Team 6672                #
 #----------------------------------------------------------------------#
@@ -26,4 +26,4 @@ eventCode <- "2023txdal"
 
 # This is where you input the path to the folder you want to store data in
 # Make sure the path matches the same format as the one show below
-path <- "C:/Users/wcbri/Documents/KrakenZero/krakendata/"
+path <- "C:/Users/wcbri/Documents/KrakenTwo/krakendata/"

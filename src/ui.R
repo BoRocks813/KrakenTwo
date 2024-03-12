@@ -1,8 +1,8 @@
 #----------------------------------------------------------------------#
-#                              KRAKENZERO                              #
-#                                 2023                                 #
+#                               KRAKENTWO                              #
+#                                 2024                                 #
 #                                                                      #
-#               Created by William Brittian of Team 6672               #
+#                 Created by Will Brittian of Team 6672                #
 #----------------------------------------------------------------------#
 
 
@@ -15,6 +15,7 @@
 
 # Imports
 library(shiny)
+library(shinyWidgets)
 library(bslib)
 library(DT)
 
@@ -38,46 +39,69 @@ theme <- bs_theme(
 # it is the more traditional CSS-like way of organizing things
 ui <- navbarPage(
   
- # title = div(icon("gitkraken", lib = "font-awesome"), " KrakenZero"),
-  title = "KrakenZero",
+ # title = div(icon("gitkraken", lib = "font-awesome"), " KrakenTwo"),
+  title = "KrakenTwo",
   
   
   tabPanel("Data",
-           column(
-             wellPanel(
-               textAreaInput("dataInput", "Input Scout Data", width = "330px", height = "200px", resize = "none"),
-               actionButton("enterData", "Enter"),
-               h4("Apply Data?"),
-               actionButton("yesData", "Yes", width = '60px'),
-               actionButton("noData", "No", width = '60px')
+           fluidRow(
+             column(
+               wellPanel(
+                 textAreaInput("dataInput", "Input Scout Data", width = "330px", height = "200px", resize = "none"),
+                 actionButton("enterData", "Enter"),
+                 h4("Apply Data?"),
+                 actionButton("yesData", "Yes", width = '60px'),
+                 actionButton("noData", "No", width = '60px')
+               ),
+               width = 3
              ),
-             width = 3
-           ),
-           column(
-             DTOutput("preview"),
-             width = 9
+             column(
+               DTOutput("preview"),
+               width = 9
+             )
            )
   ),  
   
   tabPanel("Teams",
-           column(
-             wellPanel(
-               selectInput("pickTeam", 
-                           "Select a Team:", 
-                           ""),
-               actionButton("enterTeamSearch",
-                            "Enter")
+           fluidRow(
+             column(
+               3,
+               wellPanel(
+                 selectInput("pickTeam", 
+                             "Select a Team:", 
+                             ""),
+                 actionButton("enterTeamSearch",
+                              "Enter")
+               ),
+               wellPanel(
+                 plotOutput("teamPhoto")
+               )
              ),
-             wellPanel(
-               plotOutput("teamPhoto")
-             ),
-             width = 3
-           ),
+             column(
+               # TODO add nuanced data views once format and metrics decided
+               9,
+               
+             )
+           )
   ),
   
   tabPanel("Matches",
-           actionButton("hello", "button1"),
-           actionButton("goodbye", "button2")
+           fluidRow(
+             column(
+               3,
+               sidebarPanel(
+                 textInput("matchsearch",
+                           "Search:",
+                           placeholder = "Enter match number"),
+                 actionButton("entermatchsearch", "Enter"),
+                 width = 12
+               )
+             ),
+             column(
+               9,
+               DTOutput("matchsearchDT")
+             )
+           )   
   ),
   
   tabPanel("Competition",
@@ -89,18 +113,43 @@ ui <- navbarPage(
   ),
   
   tabPanel("Match Planner",
-           
+           fluidRow(
+             column(
+               3,
+               wellPanel(
+                 selectInput(
+                   "selectedMatch",
+                   "Select a Match",
+                   choices = ""
+                 )
+               ),
+               wellPanel(
+                 textOutput("winChanceourTeam"),
+                 textOutput("predictedScore"),
+                 textOutput("driverStation"),
+                 textOutput("alliance")
+               )
+             ),
+             column(
+               9,
+               DTOutput("plannertable")
+               # TODO add more data once decided (based on teams page)
+             )
+           )
   ),
   
   tabPanel("Stats",
-           
+           # TODO (very low priority) fix colors to make more visible or switch
+           # widgets
+           materialSwitch(inputId = "showstats", label = "Show All Stats"),
+           DTOutput("statsData")
   ),
   
-  tabPanel("Schedule"
-           
+  tabPanel("Schedule",
+           DTOutput("matchScheduleDT")
   ),
   
-  tabPanel("Functions"
+  tabPanel("Functions",
            
   ),
   

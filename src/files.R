@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------#
-#                              KRAKENZERO                              #
-#                                 2023                                 #
+#                               KRAKENTWO                              #
+#                                 2024                                 #
 #                                                                      #
 #                 Created by Will Brittian of Team 6672                #
 #----------------------------------------------------------------------#
@@ -16,7 +16,7 @@ source("vals.R")
 # Creates a new CSV file for storing scouting data based on an input fileName
 #
 # This is only needed to form the basic file skeleton and is usually only run
-# at startup
+# at first startup of a competition
 createFile <- function(fileName) {
   # Creates a new easily accessible path to place the file based on the predetermined
   # path defined in config.R
@@ -87,7 +87,7 @@ saveScheduleframe <- function() {
 
 saveTeammatchesframe <- function() {
   filePath <- paste0(path, "teammatchesframe.csv")
-  
+    
   write.csv(vals$teammathesframe, filePath, row.names = FALSE)
 }
 
