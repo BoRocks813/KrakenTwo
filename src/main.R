@@ -7,7 +7,7 @@
 
 
 # 
-# This file is the center of KrakenZero
+# This file is the center of KrakenTwo
 # This is where all of the functions are called to start the app
 # 
 # To run, press the "Run App" button at the top

@@ -10,6 +10,9 @@
 
 # In general, functions are arranged in alphabetical order
 
+library(httr)
+
+
 source("config.R")
 source("vals.R")
 
@@ -147,6 +150,17 @@ getSchedule <- function() {
 }
 
 
+getTeams <- function() {
+  print("here")
+  teamsURL <- paste0(tbaBase, "/event/", eventCode, "/teams", authKey)
+  
+  teams <- content(GET(teamsURL))
+  
+  print(teams)
+  
+}
+
+
 # Loads data for program startup
 loadData <- function() {
   
@@ -275,7 +289,11 @@ startup <- function() {
   loadData()
   
   
+  # Pulls the schedule from Statbotics
+  vals$scheduleframe <- getSchedule()
   
+  
+  getTeams()
   
   # Tells the server to not rerun this function
   vals$startupDone <- TRUE
