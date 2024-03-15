@@ -79,12 +79,12 @@ ui <- navbarPage(
                ),
                wellPanel(
                  plotOutput("teamPhoto")
-               )
+               ),
              ),
              column(
-               # TODO add nuanced data views once format and metrics decided
                9,
-               
+               DTOutput("teamDT"),
+               # TODO add nuanced data views once format and metrics decided
              )
            )
   ),

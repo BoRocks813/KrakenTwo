@@ -206,6 +206,7 @@ getSchedule <- function() {
   )
   
   for(m in 1:length(matches)) {
+    print(matches)
     if(matches[[m]]$comp_level == "qm") {
       curmatch <- matches[[m]]
       
@@ -218,6 +219,8 @@ getSchedule <- function() {
                        blue2 = c(),
                        blue3 = c()
       )
+      
+      print(curmatch)
       
       r1 <- curmatch$alliances$red$team_keys[[1]]
       r2 <- curmatch$alliances$red$team_keys[[2]]
@@ -367,8 +370,10 @@ loadData <- function() {
     vals$scheduleframe <- read.csv(paste0(path, "scheduleframe.csv"))
   } else {
     if(has_internet()) {
-      vals$scheduleframe <- getSchedule()
-      saveScheduleframe()
+      try({
+        vals$scheduleframe <- getSchedule()
+        saveScheduleframe()
+      })
     } else {
       showModal(internetModal("schedule"))
     }

@@ -116,6 +116,23 @@ server <- function(input, output, session) {
                       choices = vals$teamframe$teamNum)
   })
   
+  observeEvent(input$enterTeamSearch, {
+    tNum <- input$pickTeam
+    
+    idx <- which(tNum ==  vals$mainframe$teamNum)
+    
+    teaminfo <- data.frame()
+    
+    if(length(idx) > 0) {
+      for(t in idx) {
+        rbind(teaminfo, vals$mainframe[t, ])
+      }
+    }
+    
+    output$teamDT <- renderDT(datatable(teaminfo, options = list(scrollX = TRUE, paging = FALSE),
+                                        selection = "single"))
+  })
+  
   
   # Matches Page
   
