@@ -6,7 +6,7 @@
 #----------------------------------------------------------------------#
 
 
-# This file contains miscellaneous functions used in KrakenZero
+# This file contains miscellaneous functions used in KrakenTwo
 
 # In general, functions are arranged in alphabetical order
 
@@ -22,7 +22,7 @@ source("vals.R")
 
 
 calcValues <- function(df) {
-  tempDF <- data.frame(
+  info <- data.frame(
     teamNum = c(),
     matchNum = c(),
     alliance = c(),
@@ -63,16 +63,105 @@ calcValues <- function(df) {
     scoutName = c(),
     comments = c(),
     
-    scoredT = numeric(1),
-    scoredA = numeric(1),
+    scoredT = c(),
+    scoredA = c(),
+    scored = c(),
+    pointsE = c(),
+    missed = c(),
+    accuracy = c(),
+    speak = c(),
+    speakA = c(),
+    speakT = c()
     
   )
   
+  info <- rbind(info, df)
+  
+  info$scoredT <- numeric(1)
+  info$scoredA <- numeric(1)
+  info$scored <- numeric(1)
+  info$pointsE <- numeric(1)
+  info$missed <- numeric(1)
+  info$accuracy <- numeric(1)
+  info$speak <- numeric(1)
+  info$speakA <- numeric(1)
+  info$speakT <- numeric(1)
+  
+  
+  speaker <- info$teleopSpeakerClose[1] + info$teleopSpeakerMid[1] + info$teleopSpeakerFar[1] +
+    info$autoSpeakerClose[1] + info$autoSpeakerMid[1]
   
   
   
+  tscored <- info$teleopSpeakerClose[1] + info$teleopSpeakerMid[1] + info$teleopSpeakerFar[1] +
+    info$teleopAmp[1] + info$teleopTrap[1]
+  
+  ascored <- info$autoSpeakerClose[1] + info$autoSpeakerMid[1] + info$autoAmp[1]
+  
+  epoints <- 0
+  
+  if(info$climb[1]) {
+    if(info$spotlight[1] > 0) {
+      epoints <- 4
+    } else {
+      epoints <- 3
+    }
+  } else {
+    epoints <- 1
+  }
+  
+  scored <- tscored + ascored + info$teleopTrap[1]
+  
+ 
+  misses <- info$autoAmpMisses[1] + info$autoSpeakerCloseMisses[1] + info$autoSpeakerMidMisses[1] +
+    info$teleopSpeakerCloseMisses[1] +info$teleopSpeakerFarMisses[1] +info$teleopSpeakerFarMisses[1] + 
+    info$teleopAmpMisses[1] + info$teleopTrapMisses[1]
   
   
+
+  accuracy <- round((scored / (scored + misses)) * 100, digits = 2)
+  
+  if(scored - info$teleopTrap[1] > 0) {
+    speak <- round(((speaker / (scored - info$teleopTrap[1])) * 100), digits = 2)
+  } else {
+    speak <- 100
+  }
+  
+  if(ascored > 0) {
+    speakA <- round(((info$autoSpeakerClose[1] + info$autoSpeakerMid[1]) / ascored) * 100, digits = 2)
+  } else {
+    speakA <- 100
+  }
+  
+  if(tscored > 0) {
+    speakT <- round(((info$teleopSpeakerClose[1] + info$teleopSpeakerMid[1] + info$teleopSpeakerFar[1]) /
+                       tscored) * 100, digits = 2)
+  } else {
+    speakT <- 100
+  }
+  
+  info$scoredT[1] <- tscored
+  info$scoredA[1] <- ascored
+  info$scored[1] <- scored
+  info$pointsE[1] <- epoints
+  info$missed[1] <- misses
+  info$accuracy[1] <- accuracy
+  info$speak <- speak
+  info$speakA <- speakA
+  info$speakT <- speakT
+  
+  
+  return(info)
+  
+}
+
+
+deleteModal <- function() {
+  modalDialog(
+    tagList(actionButton("confirmDelete", "Yes"),
+            title = "Are you sure you want to delete all data?"
+    )
+  )
 }
 
 
@@ -81,6 +170,23 @@ calcValues <- function(df) {
 emptyDF <- function() {
   return(vals$templateframe)
 }
+
+findTeamIndex <- function(num) {
+  return(as.integer(which(vals$teamframe$teamNum == num)))
+}
+
+
+
+getEPA <- function(teamNum) {
+  url <- paste0(statboticsBase, "/team_year/", teamNum, "/2024")
+  
+  data <- content(GET(url))
+  
+  EPA <- data$epa$breakdown$total_points$mean[1]
+  
+  return(EPA)
+}
+
 
 
 getSchedule <- function() {
@@ -150,14 +256,103 @@ getSchedule <- function() {
 }
 
 
+getTeamEPAs <- function() {
+  for(t in 1:length(vals$teamframe)) {
+    tNum <- vals$teamframe$teamNum[t]
+    
+    vals$teamframe$EPA[t] <- getEPA(tNum)
+  }
+}
+
+
+
 getTeams <- function() {
-  print("here")
+  
   teamsURL <- paste0(tbaBase, "/event/", eventCode, "/teams", authKey)
   
   teams <- content(GET(teamsURL))
   
-  print(teams)
+  statlist <- vals$teamframeTemplate
   
+  for(t in 1:length(teams)) {
+    
+    tNum <- as.integer(teams[[t]]$team_number[1])
+    
+    team <- data.frame(
+      teamNum = c(tNum),
+      EPA = c(getEPA(tNum)),
+      aS = c(0),
+      aSa = c(0),
+      aSt = c(0),
+      aPPE = c(0),
+      speak = c(0),
+      speakA = c(0),
+      speakT = c(0),
+      aT = c(0),
+      CT = c(0)
+    )
+    
+    statlist <- rbind(statlist, team)
+  
+     
+  }
+
+  return(statlist)
+  
+}
+
+
+# Team Matches
+getTeamMatches <- function() {
+  vals$teammatchesframe <- data.frame(teamNum = c(),
+                                      matches = c(),
+                                      alliances = c())
+  
+  
+  for(team in 1:nrow(vals$teamframe)) {
+    
+    teamNum <- vals$teamframe$teamNum[team]
+    
+    matches <- c()
+    alliances <- c()
+    
+    for(match in 1:nrow(vals$scheduleframe)) {
+      
+      if(vals$scheduleframe$red1[match] == teamNum ||
+         vals$scheduleframe$red2[match] == teamNum ||
+         vals$scheduleframe$red3[match] == teamNum) {
+        
+        matches <- append(matches, as.character(match))
+        alliances <- append(alliances, "r")
+        
+      } else if(vals$scheduleframe$blue1[match] == teamNum ||
+                vals$scheduleframe$blue2[match] == teamNum ||
+                vals$scheduleframe$blue3[match] == teamNum) {
+        
+        matches <- append(matches, as.character(match))
+        alliances <- append(alliances, "b")
+        
+      }
+      
+    }
+    
+    matchString <- paste(matches, collapse = ",")
+    allianceString <- paste(alliances, collapse = ",")
+    
+    vals$teammatchesframe <- rbind(vals$teammatchesframe, data.frame(teamNum = c(teamNum), 
+                                                                     matches = c(matchString),
+                                                                     alliances = c(allianceString)))
+  }
+}
+
+
+internetModal <- function(dataframe) {
+  modalDialog(
+    tagList(
+      h4(paste0("No internet connection detected. Please connect to internet to retreive ", dataframe)),
+    ),
+    title = "No internet connection"
+  )
 }
 
 
@@ -171,13 +366,23 @@ loadData <- function() {
   if(file.exists(paste0(path, "scheduleframe.csv"))) {
     vals$scheduleframe <- read.csv(paste0(path, "scheduleframe.csv"))
   } else {
-    # TODO integrate TBA schedule pulling
+    if(has_internet()) {
+      vals$scheduleframe <- getSchedule()
+      saveScheduleframe()
+    } else {
+      showModal(internetModal("schedule"))
+    }
   }
   
   if(file.exists(paste0(path, "teamframe.csv"))) {
     vals$teamframe <- read.csv(paste0(path, "teamframe.csv"))
   } else {
-    # TODO integrate Statbotics
+    if(has_internet()) {
+      vals$teamframe <- getTeams()
+      saveTeamframe()
+    } else {
+      showModal(internetModal("teamframe"))
+    }
   }
   
   if(file.exists(paste0(path, "teammatches.csv"))) {
@@ -204,8 +409,6 @@ parseData <- function(data) {
   
   pData <- data.frame(as.list(values))
   
-  print(pData)
-  
   parsedData <- data.frame(
     teamNum = c(as.integer(pData$teamNum[1])),
     matchNum = c(as.integer(pData$matchNum[1])),
@@ -225,7 +428,7 @@ parseData <- function(data) {
     neutralPickups = c(as.integer(pData$neutralPickups[1])),
     oppPickups = c(as.integer(pData$oppPickups[1])),
     sourcePickups = c(as.integer(pData$sourcePickups[1])),
-    teleopSpeakerClose = c(as.integer(pData$teleopSpeakerClose[1])),
+    fSpeakerClose = c(as.integer(pData$teleopSpeakerClose[1])),
     teleopSpeakerMid = c(as.integer(pData$teleopSpeakerMid[1])),
     teleopSpeakerFar = c(as.integer(pData$teleopSpeakerFar[1])),
     teleopSpeakerCloseMisses = c(as.integer(pData$teleopSpeakerCloseMisses[1])),
@@ -255,6 +458,80 @@ parseData <- function(data) {
 }
 
 
+recalcTeamValues <- function(tNum) {
+  
+  idx <- findTeamIndex(tNum)
+  
+  matches <- data.frame()
+  
+  matchIndexes <- which(vals$mainframe$teamNum == tNum) 
+    
+  if(length(matchIndexes) > 0) {
+    for(match in matchIndexes) {
+      matches <- rbind(matches, vals$mainframe[match, ])
+    }
+    
+    
+    # aS
+    vals$teamframe$aS[idx] <- round(mean(matches$scored), digits = 2)
+    
+    # aSt
+    vals$teamframe$aSt[idx] <- round(mean(matches$scoredT), digits = 2)
+    
+    # aSa
+    vals$teamframe$aSa[idx] <- round(mean(matches$scoredA), digits = 2)
+    
+    # aPPE
+    vals$teamframe$aPPE[idx] <- round(mean(matches$pointsE), digits = 2)
+    
+    # speak
+    vals$teamframe$speak[idx] <- round(mean(matches$speak), digits = 2)
+    
+    # speakA
+    vals$teamframe$speakA[idx] <- round(mean(matches$speakA), digits = 2)
+    
+    # speakT
+    vals$teamframe$speakT[idx] <- round(mean(matches$speakT), digits = 2)
+    
+    # aT
+    vals$teamframe$aT[idx] <- round(mean(matches$teleopTrap), digits = 2)
+    
+    # CT
+    vals$teamframe$CT[idx] <- round(mean(matches$climbTime), digits = 2)
+  } else {
+    vals$teamframe$aS[idx] <- 0
+    vals$teamframe$aSt[idx] <- 0
+    vals$teamframe$aSa[idx] <- 0
+    vals$teamframe$aPPE[idx] <- 0
+    vals$teamframe$speak[idx] <- 0
+    vals$teamframe$speakA[idx] <- 0
+    vals$teamframe$speakT[idx] <- 0
+    vals$teamframe$aT[idx] <- 0
+    vals$teamframe$CT[idx] <- 0
+  }
+  
+}
+
+
+recalcAllMatches <- function() {
+  for(t in 1:length(vals$mainframe)) {
+    data <- vals$mainframe[t, 1:39]
+    
+    vals$mainframe[t, ] <- calcValues(data)
+  }
+}
+
+
+recalcAllValues <- function() {
+  for(t in 1:length(vals$teamframe)) {
+    num <- vals$teamframe$teamNum[t]
+    
+    recalcTeamValues(num)
+  }
+}
+
+
+
 repeatModal <- function() {
   modalDialog(
     tagList(
@@ -273,8 +550,8 @@ resetDF <- function(dataframe) {
 
 resetDFs <- function() {
   vals$mainframe <- vals$templateframe
-  vals$teamframe <- vals$templateframe
-  vals$scheduleframe <- vals$templateframe
+  vals$teamframe <- vals$teamframeTemplate
+  vals$scheduleframe <- vals$scheduleframeTemplate
   vals$teammatchesframe <- vals$templateframe
 }
 
@@ -288,15 +565,9 @@ startup <- function() {
   # Loads files on program startup
   loadData()
   
-  
-  # Pulls the schedule from Statbotics
-  vals$scheduleframe <- getSchedule()
-  
-  
-  getTeams()
-  
   # Tells the server to not rerun this function
   vals$startupDone <- TRUE
+  
 }
 
 updateTeamSelect <- function() {

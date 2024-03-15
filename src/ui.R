@@ -53,6 +53,10 @@ ui <- navbarPage(
                  actionButton("yesData", "Yes", width = '60px'),
                  actionButton("noData", "No", width = '60px')
                ),
+               wellPanel(
+                 h5("WARNING: this button will delete all current data. Consider exporting the data first."),
+                 actionButton("deleteFiles", "Delete Files")
+               ),
                width = 3
              ),
              column(
@@ -150,7 +154,23 @@ ui <- navbarPage(
   ),
   
   tabPanel("Functions",
-           
+           fluidRow(
+             h4("Online Functions (internet required)"),
+             actionButton("getSchedule", "Get Schedule"),
+             actionButton("setupTeams", "Setup Teams List"),
+             actionButton("getTeamMatches", "Get Team Matches"),
+             actionButton("pullEPAs", "Update EPAs")
+           ),
+           fluidRow(
+             h4("Data"),
+             actionButton("recalcVals", "Recalculate Team Stats"),
+             actionButton("recalcMatches", "Recalculate Match Stats")
+           ),
+           fluidRow(
+             h4("File Editing"),
+             actionButton("updatedata", "Update Data from Files"),
+             actionButton("savedata", "Save Data")
+           )
   ),
   
   

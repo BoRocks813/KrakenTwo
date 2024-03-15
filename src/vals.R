@@ -11,6 +11,8 @@
 
 tbaBase <- "https://www.thebluealliance.com/api/v3"
 
+statboticsBase <- "https://api.statbotics.io/v3"
+
 authKey <- "?X-TBA-Auth-Key=4dFDCdOUUHc0cp22wPCRs6Wc7Xl7omiICPRpT3CMPKU0AsYRiNO4b7ZMetfO5Yv5"
 
 
@@ -71,7 +73,43 @@ vals <- reactiveValues(
     driver = c(),
     
     scoutName = c(),
-    comments = c()
+    comments = c(),
+    
+    scoredT = c(),
+    scoredA = c(),
+    scored = c(),
+    pointsE = c(),
+    missed = c(),
+    accuracy = c(),
+    speak = c(),
+    speakA = c(),
+    speakT = c()
+  ),
+  
+  teamframeTemplate = data.frame(
+    teamNum = c(),
+    EPA = c(),
+    aS = c(),
+    aSa = c(),
+    aSt = c(),
+    accuracy = c(),
+    aPPE = c(),
+    speak = c(),
+    speakA = c(),
+    speakT = c(),
+    aT = c(),
+    CT = c()
+  ),
+  
+  scheduleframeTemplate = data.frame(
+    round = c(),
+    match_number = c(),
+    red1 = c(),
+    red2 = c(),
+    red3 = c(),
+    blue1 = c(),
+    blue2 = c(),
+    blue3 = c()
   ),
   
   mainframe = data.frame(),
@@ -81,7 +119,6 @@ vals <- reactiveValues(
   scheduleframe = data.frame(),
   
   teammatchesframe = data.frame(),
-  
   
   previewframe = data.frame(),
   

@@ -21,7 +21,7 @@ competitionName <- "Fort Worth"
 # In general, the format is YYYYdtevt. YYYY is the year, dt is 
 # the district (e.g. tx for Texas), and evt is the event code
 # (sometimes 2 characters)
-eventCode <- "2023txdal"
+eventCode <- "2024txwac"
 
 
 # This is where you input the path to the folder you want to store data in

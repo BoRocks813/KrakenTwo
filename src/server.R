@@ -8,7 +8,7 @@
 
 #
 # The server function is where the majority of the
-# functions necessary to run KrakenZero are called
+# functions necessary to run KrakenTwo are called
 # 
 
 
@@ -39,14 +39,13 @@ server <- function(input, output, session) {
   # Saves the data in the textbox into previewframe so
   # user can preview before submitting the data
   observeEvent(input$enterData, {
-    f <- input$dataInput
-    
-    parsed <- parseData(f)
-    
-    vals$previewframe <- parsed
-    
-    print("previewframe:")
-    print(vals$previewframe)
+    if(input$dataInput != "") {
+      f <- input$dataInput
+      
+      parsed <- parseData(f)
+      
+      vals$previewframe <- parsed
+    }
   })
   
   observeEvent(input$yesData, {
@@ -64,8 +63,7 @@ server <- function(input, output, session) {
         if(repeatFound == FALSE) {
           vals$mainframe <- rbind(vals$mainframe, calcValues(vals$previewframe[1, ]))
           
-          # TODO add findTeamIndex and matchesPlayed
-          
+          recalcTeamValues(vals$previewframe$teamNum[1])
           saveMainframe()
           saveTeamframe()
           vals$previewframe <- vals$templateframe
@@ -74,10 +72,9 @@ server <- function(input, output, session) {
         
       } else {
         # TODO: maybe add calcValues here when format set
-        vals$mainframe <- rbind(vals$mainframe, vals$previewframe[1, ])
+        vals$mainframe <- rbind(vals$mainframe, calcValues(vals$previewframe[1, ]))
         
-        # TODO: add findTeamIndex and matchesPlayed (in teamframe)
-        
+        recalcTeamValues(vals$previewframe$teamNum[1])
         saveMainframe()
         saveTeamframe()
         vals$previewframe <- vals$templateframe
@@ -90,6 +87,21 @@ server <- function(input, output, session) {
   observeEvent(input$noData, {
     
   })
+  
+  
+  observeEvent(input$deleteFiles, {
+    showModal(deleteModal())
+  })
+  
+  observeEvent(input$confirmDelete, {
+    vals$mainframe <- vals$templateframe
+    vals$teamframe <- vals$teamframeTemplate
+    if(file.exists(paste0(path, "mainframe.csv"))) {
+      file.remove(paste0(path, "mainframe.csv"))
+    }
+    removeModal()
+  })
+  
   
   
   output$preview <- renderDT(datatable(vals$previewframe, options = list(scrollX = TRUE, paging = FALSE),
@@ -150,6 +162,54 @@ server <- function(input, output, session) {
   
   
   # Functions Page
+  
+  observeEvent(input$getSchedule, {
+    vals$scheduleframe <- getSchedule()
+  })
+  
+  observeEvent(input$setupTeams, {
+    vals$teamframe <- getTeams()
+  })
+  
+  observeEvent(input$getTeamMatches, {
+    getTeamMatches()
+  })
+  
+  observeEvent(input$pullEPAs, {
+    getTeamEPAs()
+  })
+  
+  
+  observeEvent(input$recalcVals, {
+    recalcAllValues()
+  })
+  
+  observeEvent(input$recalcMatches, {
+    recalcAllMatches()
+  })
+  
+  
+  observeEvent(input$updatedata, {
+    if(file.exists(paste0(path, "mainframe.csv"))) {
+      vals$mainframe <- read.csv(paste0(path, "mainframe.csv"))
+    }
+    
+    if(file.exists(paste0(path, "teamframe.csv"))) {
+      vals$teamframe <- read.csv(paste0(path, "teamframe.csv"))
+    }
+    
+    if(file.exists(paste0(path, "schedule.csv"))) {
+      vals$scheduleframe <- read.csv(paste0(path, "schedule.csv"))
+    }
+    
+    if(file.exists(paste0(path, "teammatches.csv"))) {
+      vals$teammatchesframe <- read.csv(paste0(path, "teammatches.csv"))
+    }
+  })
+  
+  observeEvent(input$savedata, {
+    
+  })
   
   
   
