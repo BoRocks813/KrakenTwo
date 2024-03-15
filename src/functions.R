@@ -392,6 +392,8 @@ loadData <- function() {
   
   if(file.exists(paste0(path, "teammatches.csv"))) {
     vals$teammatchesframe <- read.csv(paste0(path, "teammatches.csv"))
+  } else {
+    getTeamMatches()
   }
   
 }

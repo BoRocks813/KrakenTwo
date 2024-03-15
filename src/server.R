@@ -209,6 +209,8 @@ server <- function(input, output, session) {
   observeEvent(input$updatedata, {
     if(file.exists(paste0(path, "mainframe.csv"))) {
       vals$mainframe <- read.csv(paste0(path, "mainframe.csv"))
+    } else {
+      vals$mainframe <- vals$templateframe
     }
     
     if(file.exists(paste0(path, "teamframe.csv"))) {
@@ -225,7 +227,7 @@ server <- function(input, output, session) {
   })
   
   observeEvent(input$savedata, {
-    
+    saveAllData()
   })
   
   
