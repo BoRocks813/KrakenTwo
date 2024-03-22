@@ -206,7 +206,6 @@ getSchedule <- function() {
   )
   
   for(m in 1:length(matches)) {
-    print(matches)
     if(matches[[m]]$comp_level == "qm") {
       curmatch <- matches[[m]]
       
@@ -219,8 +218,6 @@ getSchedule <- function() {
                        blue2 = c(),
                        blue3 = c()
       )
-      
-      print(curmatch)
       
       r1 <- curmatch$alliances$red$team_keys[[1]]
       r2 <- curmatch$alliances$red$team_keys[[2]]
@@ -435,7 +432,7 @@ parseData <- function(data) {
     neutralPickups = c(as.integer(pData$neutralPickups[1])),
     oppPickups = c(as.integer(pData$oppPickups[1])),
     sourcePickups = c(as.integer(pData$sourcePickups[1])),
-    fSpeakerClose = c(as.integer(pData$teleopSpeakerClose[1])),
+    teleopSpeakerClose = c(as.integer(pData$teleopSpeakerClose[1])),
     teleopSpeakerMid = c(as.integer(pData$teleopSpeakerMid[1])),
     teleopSpeakerFar = c(as.integer(pData$teleopSpeakerFar[1])),
     teleopSpeakerCloseMisses = c(as.integer(pData$teleopSpeakerCloseMisses[1])),
@@ -472,6 +469,7 @@ recalcTeamValues <- function(tNum) {
   matches <- data.frame()
   
   matchIndexes <- which(vals$mainframe$teamNum == tNum) 
+  
     
   if(length(matchIndexes) > 0) {
     for(match in matchIndexes) {
@@ -530,7 +528,7 @@ recalcAllMatches <- function() {
 
 
 recalcAllValues <- function() {
-  for(t in 1:length(vals$teamframe)) {
+  for(t in 1:nrow(vals$teamframe)) {
     num <- vals$teamframe$teamNum[t]
     
     recalcTeamValues(num)
