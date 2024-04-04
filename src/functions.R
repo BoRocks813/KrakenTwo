@@ -11,7 +11,7 @@
 # In general, functions are arranged in alphabetical order
 
 library(httr)
-
+library(curl)
 
 source("config.R")
 source("vals.R")
@@ -255,10 +255,45 @@ getSchedule <- function() {
         length(matches)   
         schedule <- rbind(schedule, df)
       }
+    }
+    
+  for(m in 1:length(matches)) {
+    if(matches[[m]]$comp_level == "qm") {
+      curmatch <- matches[[m]]
       
       incProgress(1/n, detail = paste("Match", m))
       
+      r1 <- curmatch$alliances$red$team_keys[[1]]
+      r2 <- curmatch$alliances$red$team_keys[[2]]
+      r3 <- curmatch$alliances$red$team_keys[[3]]
+      
+      b1 <- curmatch$alliances$blue$team_keys[[1]]
+      b2 <- curmatch$alliances$blue$team_keys[[2]]
+      b3 <- curmatch$alliances$blue$team_keys[[3]]
+      
+      r1 <- as.integer(substr(r1, 4, 7))
+      r2 <- as.integer(substr(r2, 4, 7))
+      r3 <- as.integer(substr(r3, 4, 7))
+      
+      b1 <- as.integer(substr(b1, 4, 7))
+      b2 <- as.integer(substr(b2, 4, 7))
+      b3 <- as.integer(substr(b3, 4, 7))
+      
+      mNum <- as.integer(curmatch$match_number)
+      
+      df <- data.frame(round = c("qf"),
+                       match_number = c(mNum),
+                       red1 = c(r1),
+                       red2 = c(r2),
+                       red3 = c(r3),
+                       blue1 = c(b1),
+                       blue2 = c(b2),
+                       blue3 = c(b3)
+      )
+      
+      schedule <- rbind(schedule, df)
     }
+  }
   })
   
   schedule2 <- schedule[order(schedule$match_number), ]
@@ -448,7 +483,7 @@ parseData <- function(data) {
     neutralPickups = c(as.integer(pData$neutralPickups[1])),
     oppPickups = c(as.integer(pData$oppPickups[1])),
     sourcePickups = c(as.integer(pData$sourcePickups[1])),
-    fSpeakerClose = c(as.integer(pData$teleopSpeakerClose[1])),
+    teleopSpeakerClose = c(as.integer(pData$teleopSpeakerClose[1])),
     teleopSpeakerMid = c(as.integer(pData$teleopSpeakerMid[1])),
     teleopSpeakerFar = c(as.integer(pData$teleopSpeakerFar[1])),
     teleopSpeakerCloseMisses = c(as.integer(pData$teleopSpeakerCloseMisses[1])),
@@ -485,6 +520,7 @@ recalcTeamValues <- function(tNum) {
   matches <- data.frame()
   
   matchIndexes <- which(vals$mainframe$teamNum == tNum) 
+  
     
   if(length(matchIndexes) > 0) {
     for(match in matchIndexes) {
@@ -543,7 +579,7 @@ recalcAllMatches <- function() {
 
 
 recalcAllValues <- function() {
-  for(t in 1:length(vals$teamframe)) {
+  for(t in 1:nrow(vals$teamframe)) {
     num <- vals$teamframe$teamNum[t]
     
     recalcTeamValues(num)

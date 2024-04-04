@@ -86,6 +86,66 @@ vals <- reactiveValues(
     speakT = c()
   ),
   
+  teamSearch = data.frame(
+    teamNum = c(),
+    matchNum = c(),
+    alliance = c(),
+    driveStation = c(),
+    
+    startLocation = c(),
+    preload = c(),
+    
+    mobility = c(),
+    autoPickups = c(),
+    autoAmp = c(),
+    autoAmpMisses = c(),
+    autoSpeakerClose = c(),
+    autoSpeakerMid = c(),
+    autoSpeakerCloseMisses = c(),
+    autoSpeakerMidMisses = c(),
+    
+    friendlyPickups = c(),
+    neutralPickups = c(),
+    oppPickups = c(),
+    sourcePickups = c(),
+    
+    teleopSpeakerClose = c(),
+    teleopSpeakerMid = c(),
+    teleopSpeakerFar = c(),
+    teleopSpeakerCloseMisses = c(),
+    teleopSpeakerMidMisses = c(),
+    teloepSpeakerFarMisses = c(),
+    
+    teleopAmp = c(),
+    teleopAmpMisses = c(),
+    teleopTrap = c(),
+    teleopTrapMisses = c(),
+    
+    climb = c(),
+    climbTime = c(),
+    climbPartners = c(),
+    spotlight = c(),
+    
+    shuttle = c(),
+    shooter = c(),
+    intake = c(),
+    speed = c(),
+    driver = c(),
+    
+    scoutName = c(),
+    comments = c(),
+    
+    scoredT = c(),
+    scoredA = c(),
+    scored = c(),
+    pointsE = c(),
+    missed = c(),
+    accuracy = c(),
+    speak = c(),
+    speakA = c(),
+    speakT = c()
+  ),
+  
   teamframeTemplate = data.frame(
     teamNum = c(),
     EPA = c(),

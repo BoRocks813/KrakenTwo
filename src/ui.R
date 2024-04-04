@@ -83,7 +83,30 @@ ui <- navbarPage(
              ),
              column(
                9,
-               DTOutput("teamDT"),
+               fluidRow(
+                 DTOutput("teamDT")
+               ),
+               fluidRow(
+                 column(
+                   4,
+                   wellPanel(
+                     
+                   )
+                 ),
+                 column(
+                   4,
+                   wellPanel(
+                     
+                   )
+                 ),
+                 column(
+                   4,
+                   wellPanel(
+                     
+                   )
+                 )
+               )
+               
                # TODO add nuanced data views once format and metrics decided
              )
            )

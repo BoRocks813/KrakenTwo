@@ -119,17 +119,36 @@ server <- function(input, output, session) {
   observeEvent(input$enterTeamSearch, {
     tNum <- input$pickTeam
     
-    idx <- which(tNum ==  vals$mainframe$teamNum)
+    vals$teamSearch <- vals$templateframe
     
-    teaminfo <- data.frame()
+    
+    picPath <- paste0(path, "Pictures\\", tNum, ".png")
+    picAlt <- paste0(path, "Pictures\\", tNum, ".JPG")
+    nopePath <- paste0(path, "Pictures\\nope.png")
+    
+    if(file.exists(picPath)) {
+      output$teamPhoto <- renderImage(list(src = picPath, width = 280), deleteFile = FALSE)
+    } else if(file.exists(picAlt)) {
+      output$teamPhoto <- renderImage(list(src = picAlt, width = 280), deleteFile = FALSE)
+    } else {
+      output$teamPhoto <- renderImage(list(src = nopePath, width = 280), deleteFile = FALSE)
+    }
+    
+    
+    
+    idx <- which(tNum == vals$mainframe$teamNum)
+    
+    
+    
+    
     
     if(length(idx) > 0) {
       for(t in idx) {
-        rbind(teaminfo, vals$mainframe[t, ])
+        vals$teamSearch <- rbind(vals$teamSearch, vals$mainframe[t, ])
       }
     }
     
-    output$teamDT <- renderDT(datatable(teaminfo, options = list(scrollX = TRUE, paging = FALSE),
+    output$teamDT <- renderDT(datatable(vals$teamSearch, options = list(scrollX = TRUE, scrollY = "480px", paging = FALSE),
                                         selection = "single"))
   })
   
