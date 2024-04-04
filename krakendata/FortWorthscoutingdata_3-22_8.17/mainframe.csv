@@ -1,0 +1,482 @@
+"teamNum","matchNum","alliance","driveStation","startLocation","preload","mobility","autoPickups","autoAmp","autoAmpMisses","autoSpeakerClose","autoSpeakerMid","autoSpeakerCloseMisses","autoSpeakerMidMisses","friendlyPickups","neutralPickups","oppPickups","sourcePickups","fSpeakerClose","teleopSpeakerMid","teleopSpeakerFar","teleopSpeakerCloseMisses","teleopSpeakerMidMisses","teleopSpeakerFarMisses","teleopAmp","teleopAmpMisses","teleopTrap","teleopTrapMisses","climb","climbTime","climbPartners","spotlight","shuttle","shooter","intake","speed","driver","scoutName","comments","scoredT","scoredA","scored","pointsE","missed","accuracy","speak","speakA","speakT"
+7534,104,"r","r3",3,FALSE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"pena","tank drive, didnt do anything at all barely was able to drive
+",0,0,0,1,0,NA,100,100,100
+6672,4,"b","b3",1,TRUE,TRUE,"[]",0,0,1,0,0,0,1,2,0,7,6,0,0,2,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,4,2,4,2,"sahil","shooter didnt malfunction and was somewhat consistent, but intake was poor and the driver kept misfiring and bumping into things.
+",3,1,4,1,2,66.67,75,100,66.67
+7492,104,"r","r2",2,TRUE,FALSE,"[]",0,0,0,0,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,TRUE,20,0,FALSE,FALSE,2,2,2,2,"Pozo","HAd issues w/ mobility and it had some weird churro thing up top which seemed to work as a stabilizer for the notes but just ended up wobbling. Slow drivetrain and slow shooter. Had issues getting itself alligned
+",1,0,1,3,1,50,100,100,100
+7506,900,"b","b1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Max","Very clunky bot. Had a note stuck in the bot for much of the match. 
+",0,0,0,1,0,NA,100,100,100
+9752,999,"b","b1",4,TRUE,TRUE,"[]",0,0,0,0,0,0,3,1,0,0,1,3,0,0,1,0,0,0,0,0,TRUE,5,0,FALSE,FALSE,4,2,4,4,"Henry Horvat","got stuck with our bot on auton. note fell out of intake a few times. pretty good shooter and climb.
+",3,0,3,3,0,100,100,100,100
+2689,104,"r","r1",1,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,3,1,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,3,3,"Poon","Shooter seems to be fixed, therefore is forced to shoot spk close up. Maybe can shoot amp but unclear. No climb. Intake requires very specific placement for the driver to do, so intaking usually takes a while (also seems to be forced to intake from source only/no ground intake).
+",2,1,3,1,2,60,100,100,100
+9081,1,"b","b3",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Max","was disabled the whole match ",0,0,0,1,0,NA,100,100,100
+7271,1,"b","b1",1,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Henry Horvat","no auton, very tippy, a slight tip disabled it for the whole match
+",0,0,0,1,0,NA,100,100,100
+9407,1,"b","b2",1,FALSE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"sahil","no show - no rating             
+",0,0,0,1,0,NA,100,100,100
+7540,1,"r","r1",4,TRUE,FALSE,"[]",0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,2,2,"Poon","Only shot preloaded note from auto. Tried to ground intake? It didn't work though. Possibility for source intake but didn't intake any pieces in teleop. No climb. 
+",0,1,1,1,0,100,100,100,100
+6672,1,"r","r3",1,TRUE,TRUE,"[1, 6]",0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,TRUE,1,0,FALSE,FALSE,5,2,5,5,"Pena","yeah whats up with that stuck note
+",1,2,3,3,0,100,66.67,100,0
+4153,1,"r","r2",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,2,0,5,8,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,4,3,"Pozo","No auton but takes a great line from source to right side of spaker to shoot close. Only shoots from right side of speaker. Exhausts neutral zone first then goes to source. No defence was faced during this match as blue has no functioning robots. Pretty fast and no need to turn around to shoot after intake
+",1,0,1,1,1,50,100,100,100
+7321,2,"b","b1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Henry Horvat","absent from match
+",0,0,0,1,0,NA,100,100,100
+2687,2,"b","b3",4,TRUE,FALSE,"[1, 2, 3]",0,0,4,0,0,0,4,0,0,5,5,0,0,1,0,0,0,4,0,0,TRUE,2,0,FALSE,FALSE,4,5,4,4,"Max","Fast and good bot. Spent some time trying to make amp shots but failed all of them. Shot to speaker pretty consistantly, but never from a distance.
+",1,4,5,3,5,50,100,100,100
+7503,2,"r","r3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,0,1,0,3,1,0,0,3,0,0,0,0,0,0,TRUE,6,0,FALSE,FALSE,1,1,5,4,"Pena","had to directly feed it into the bot, shot very low so missed most shots
+",3,1,4,3,3,57.14,100,100,100
+9492,2,"r","r1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,4,0,0,1,0,2,0,0,0,0,3,0,0,0,FALSE,0,0,FALSE,FALSE,3,2,2,2,"Poon","No auto. Picked up notes from ground. Bot seems to be on the slower side. When attempting to climb, crashed into the structure and was kind of tipped over and held in a bad position. 
+",5,0,5,1,0,100,40,100,40
+3310,2,"b","b2",2,TRUE,FALSE,"[2]",0,0,1,1,0,0,1,3,0,7,1,8,0,0,0,0,0,0,1,0,TRUE,4,0,TRUE,FALSE,5,4,4,3,"sahil","insanely accurate shots from mid range, consistent intake, speed was barely a 4 star. the climb was very well done as well as the trap point
+",9,2,12,4,0,100,90.91,100,88.89
+9105,2,"r","r2",1,TRUE,FALSE,"[1, 2]",0,0,2,0,1,0,4,0,0,4,3,0,0,3,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Pozo","Always parks right in front of speakert in the middle to shoot. Had some variance in shooter output. SOmetimes it would barely shoot thus causing it to miss. None of the misses were issues w/ accuracy 
+",3,2,5,1,4,55.56,100,100,100
+5908,3,"b","b3",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,2,"Max","Status light was blinking so it seemed that it was enabled but did not move after auton.
+",0,0,0,1,0,NA,100,100,100
+8512,3,"r","r2",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Pozo","Has cardboard on it and some pan type thing to play defense with? Just moved to source and stayed there for a bit. then moved to chains and just kept out of 3005's way
+",0,0,0,1,0,NA,100,100,100
+9156,3,"r","r3",2,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Pena","Barely moved, didnt intake, stood in enemey zone and did nothing
+",1,0,1,1,1,50,100,100,100
+4251,3,"b","b1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Henry Horvat","intake or shooter might be broken. played defense the entire time, but poor driver skill and sluggish tank drive. tried to climb, but climbing hooks are higher than chain and facing the wrong direction, so physically impossible.
+",0,0,0,1,0,NA,100,100,100
+7492,3,"b","b2",2,TRUE,TRUE,"[]",0,0,0,0,0,0,6,0,0,2,4,0,0,4,0,0,0,1,0,0,TRUE,5,0,TRUE,FALSE,3,4,3,2,"sahil","intake was consistent but not the fastest, and the shooter was good but poor accuracy. its speed was mediocre and it bumped into obstacles a couple times
+",4,0,4,4,5,44.44,100,100,100
+3005,3,"r","r1",1,TRUE,TRUE,"[1, 4, 5, 6]",0,0,1,4,0,0,3,3,0,9,0,5,1,0,2,0,5,0,0,0,FALSE,0,0,FALSE,TRUE,4,5,5,5,"Poon","OP AF auto (5 piece). Capability to shuttle from source. Did not climb at the end due to lack of time. A little top heavy (especially when approaching the amp). Cracked af.
+",11,5,16,1,0,100,68.75,100,54.55
+7534,4,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,2,"Max","Was disabled for the entire match.
+",0,0,0,1,0,NA,100,100,100
+8088,4,"b","b1",4,TRUE,TRUE,"[]",0,0,4,0,0,0,3,1,0,5,3,2,0,0,1,0,2,1,0,0,FALSE,0,0,FALSE,FALSE,5,5,4,4,"Henry Horvat","excellent 4 shot auto, ok driver, very good shooter, ok intake, prefered source intake.
+",4,4,8,1,1,88.89,75,100,50
+9080,4,"r","r2",1,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,3,3,"Pozo","Played defence in front of opponents speaker with some success (mostly it took blue a bit to start using their protected zone to shoot) Stopped moving at the end
+",0,1,1,1,0,100,100,100,100
+2689,4,"b","b2",2,TRUE,TRUE,"[]",0,0,0,0,1,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,4,3,"sahil","shooter was low power but accurate, but not many shots because other team played good defense. intake was consistent but slow and speed was pretty good, but the driver had tough time maneuvering.
+",0,0,0,1,1,0,100,100,100
+9088,4,"r","r1",2,TRUE,TRUE,"[]",0,0,1,0,0,0,2,2,0,6,7,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,2,"Poon","1 note auto. Consistent at intaking notes both source and ground. Only does spk close. Likely capable of other shots but did not do so due to strategy. Struggles slightly with shooting from the side of the speaker at an angle instead of straight on. 
+",2,1,3,1,2,60,100,100,100
+2582,4,"r","r3",4,FALSE,TRUE,"[]",0,0,1,0,0,0,2,2,0,5,6,0,0,0,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,2,3,"Pena","overall a good bot, did have issues with retaining notes before shooting but mainly drivers fault not bots
+",1,1,2,1,0,100,50,100,0
+4295,5,"b","b1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,1,1,"Henry Horvat","dropped preload after auton for no reason, played defense. missed climbing because they cut it too close.
+",0,0,0,1,0,NA,100,100,100
+5411,5,"r","r2",1,TRUE,FALSE,"[]",0,0,1,0,0,0,3,0,0,3,2,0,0,1,0,0,3,0,0,0,FALSE,0,0,FALSE,FALSE,2,3,3,2,"Pozo","Kindof quick but driver seemed to not know when to let people by. Can score consistent amp and has a run-over intake. Lines up close middle part of speaker to shoot
+",4,1,5,1,1,83.33,40,100,25
+2468,5,"b","b3",4,TRUE,TRUE,"[]",0,0,0,0,0,0,5,0,0,5,8,0,0,0,0,0,1,2,0,0,FALSE,0,0,FALSE,FALSE,4,4,3,2,"Max","No auton, driver did not evade defense that well. Appeared to get disabled for a few seconds. Frequently crashed into stuff. Shot close speaker shots pretty well, though.
+",1,0,1,1,2,33.33,0,100,0
+4206,5,"r","r3",2,FALSE,FALSE,"[]",0,0,0,0,0,0,0,1,0,6,1,5,0,0,1,2,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,5,5,4,"Pena"," completely missed far shots when taken, very fast cycle time and intake
+",5,0,5,1,4,55.56,100,100,100
+418,5,"b","b2",2,TRUE,TRUE,"[]",0,0,1,0,0,0,1,2,0,2,2,0,0,1,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,4,5,4,3,"sahil","shooter was powerful and somewhat consistent, and the intake was very nice until the opponents broke it i think.. the speed was barely a 4 star and the driver skill was good but he kept bumping into opponents on purpose which caused their own bot damage.
+",2,1,3,1,1,75,66.67,100,50
+9752,5,"r","r1",4,TRUE,FALSE,"[1, 2, 3]",0,0,4,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,1,0,FALSE,FALSE,4,3,4,5,"Poon","Great 4 note auto. Had a note stuck in the robot due to intake malfunction. Proceeded to play defense better than the entirety of the Golden State Warriors. Actual crack. LeBron has nothing on this bot. Good climb as well. OP
+",0,4,4,3,0,100,100,100,100
+9407,5,"r","r2",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Pozo","No show
+",0,0,0,1,0,NA,100,100,100
+9156,6,"b","b3",2,TRUE,TRUE,"[]",0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Max","Very poor intake that could not intake fast enough. Tried intaking at source but 3310 kept swooping in before 9156 could intake. 
+",1,0,1,1,2,33.33,100,100,100
+9081,6,"b","b1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,5,1,0,2,0,1,0,0,0,0,6,1,0,0,FALSE,0,0,FALSE,FALSE,3,3,2,2,"Henry Horvat","slow and wobbly when shooting, slow but fairly accurate. driver had a hard time maneuvering
+",7,0,7,1,1,87.5,14.29,100,14.29
+8512,6,"r","r3",1,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,2,1,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,4,"Pena","just went for amp, even had to wait for other bots to free up space. took too long to go around stage
+",2,0,2,1,1,66.67,0,100,0
+3310,6,"b","b2",1,TRUE,TRUE,"[1, 2, 3]",0,0,3,1,0,0,0,2,1,7,0,8,0,0,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,5,4,4,"sahil","shooter was powerful and accurate: most shots were mid range. intake was very speed and consistent. the bot itself was speedy enough to steal notes from opponent and in general was fast. the driver skill was good because of shot accuracy but bumped into obstacles a little.
+",8,4,12,1,0,100,100,100,100
+7506,6,"r","r1",4,TRUE,FALSE,"[]",0,0,0,0,0,0,3,0,0,1,1,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Poon","Very clunky shooter and intake, with butterfingers as well. Slow, and when intaking from ground, the intake itself catches onto the carpet, making it difficult to intake. Kind of just did nothing, like myself last year at robotics.
+",2,0,2,1,0,100,0,100,0
+7271,6,"r","r2",1,FALSE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Pozo","Died at midfield, revived then stopped moving again after about ten seconds 
+",0,0,0,1,0,NA,100,100,100
+5908,7,"b","b3",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Max","Very jank and jittery shooter. The robot was struggling to stay enabled. Painful to watch.
+",1,0,1,1,0,100,0,100,0
+4251,7,"r","r1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,2,"Pena","did not intake or shoot, just pulled a roomba and moved around 
+",0,0,0,1,0,NA,100,100,100
+2689,7,"b","b1",1,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,2,4,4,"Henry Horvat","kitbot modified with a climbing hook. decent speed for a tank drive. great close range shooter, but can only shoot close range and only intake from source because kitbot. couldn't climb because opponent robot disabled under chain.
+",0,1,1,1,0,100,100,100,100
+7503,7,"b","b2",4,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,TRUE,0,0,FALSE,FALSE,1,2,4,4,"sahil","it looked like its shooter broke early on. i couldnt judge the intake but it seemed poor when it tried. it was a speedy bot tho and the driver was good at bumping and successfully trapping 6672.
+",0,1,1,3,0,100,100,100,100
+6672,7,"r","r1",1,TRUE,TRUE,"[1]",0,0,1,0,0,0,2,4,1,0,4,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,4,2,4,5,"Poon","Most beautiful bot on the face of the Earth. What is 2056? What is 254? I have no idea. Intake is still a little sus from last match, maybe preset? Consistent at outmaneuvering defense and shooting close up. The opposition killed our bot though. The drive team has sick hats. Nice.
+",2,1,3,1,0,100,33.33,100,0
+7534,8,"b","b1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Henry Horvat","was stumbling around the whole match. didn't do anything of substance.
+",0,0,0,1,0,NA,100,100,100
+4206,8,"b","b3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,2,1,0,9,2,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,4,3,4,4,"Max","Shuttled to 3005 for most of the match. Climb was experiencing difficulties. Shot a note over the driver station lol. 
+",1,1,2,1,1,66.67,100,100,100
+9105,7,"r","r2",1,TRUE,FALSE,"[1, 2]",0,0,0,0,1,2,2,0,0,3,4,0,0,3,0,0,0,0,0,0,TRUE,4,0,FALSE,FALSE,3,3,3,3,"Pozo","Seemed to figure out shooter issues and how to intake quicker. Not bad but need to work on their pathing and auton shooter
+",3,0,3,3,6,33.33,100,100,100
+5411,8,"r","r1",2,TRUE,FALSE,"[]",0,0,1,0,0,0,1,2,0,5,2,1,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,TRUE,3,3,3,2,"Poon","Shooter could miss. Not horrible though. Shuttle kind of weak, probably used wrong setting on shooter. No real auto to speak of. Fast bot though. VRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+",3,1,4,1,0,100,50,100,33.33
+3005,8,"b","b2",1,TRUE,TRUE,"[1, 2, 4, 5, 6]",0,0,2,0,4,0,9,0,0,4,6,1,0,0,0,0,6,1,0,0,TRUE,3,0,TRUE,FALSE,5,4,3,4,"sahil","very well rounded bot, had variety of shots. intake was good but sometimes missed. it was pretty fast and the maneuverability of the bot was good in design and in the driver, but the driver sometimes messed up such as obstacle bumping and missing intake.
+",7,2,9,4,5,64.29,33.33,100,14.29
+9080,8,"r","r1",3,FALSE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,12,0,FALSE,FALSE,1,1,2,1,"Pena","for a team that only focused on defence they actually did terrible honeslty looked like watching a roomba in a triangular pattern letting everything get past him
+",0,0,0,3,0,NA,100,100,100
+2687,9,"b","b3",4,TRUE,TRUE,"[1, 2, 3]",0,0,4,0,0,0,2,1,0,8,5,0,0,2,0,0,0,1,0,0,FALSE,0,0,FALSE,TRUE,5,4,4,4,"Max","Tried to climb but did not have enough time. Shuttled a bit during the match. Working 4 piece auton though. Pretty fast robot.
+",2,4,6,1,3,66.67,100,100,100
+9752,9,"b","b2",1,TRUE,TRUE,"[]",0,0,1,0,0,0,1,2,0,7,3,1,0,1,1,0,4,0,0,0,TRUE,3,0,FALSE,FALSE,4,5,4,4,"sahil","intake was very consistent and well made and the shooter had a variety of shots but only consistent with the amp. the driver had great maneuverability.
+",6,1,7,3,1,87.5,42.86,100,33.33
+4295,9,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,3,4,"Pena","tried to shoot amp, missed, then got in front of opponent subwoofer and played pretty good d. super slow climb so didnt get on
+",0,0,0,1,0,NA,100,100,100
+8088,8,"r","r2",4,TRUE,FALSE,"[2, 3]",0,0,3,0,0,0,0,1,0,6,3,5,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,4,3,"Pozo","Pretty fast and reliable intake. Can shoot from mid which is goof but was unable to move teammate in time for climb. Has one hook in middle. Ground under bumoer intake and can go undernetah opponent stage if needed
+",5,3,8,1,0,100,100,100,100
+9088,9,"r","r1",2,TRUE,FALSE,"[]",0,0,1,0,0,0,1,2,0,5,7,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,3,3,"Poon","Decent bot. Had some heroic moments, like ramming into Apprentice and causing them to lose a note, shooting it higher than any rocket their sponsor NASA could concoct. (A sturdy and stronk bot, tanked many collisions) Again, no auto to speak of. Shooter has consistent. Decent bot.
+",1,1,2,1,1,66.67,100,100,100
+7321,10,"b","b1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Tangey","[Content Deleted]
+",0,0,0,1,0,NA,100,100,100
+7506,10,"r","r3",2,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,1,"Archer Oliver","Auton failed, crashed into the stage. Caused an issue and broke for the match.
+",0,1,1,1,0,100,100,100,100
+7540,10,"b","b2",3,TRUE,FALSE,"[]",0,0,1,0,0,0,4,0,0,2,3,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,1,2,"Zeb M","Very slow. Took forever to pick up a piece and score. Terrible cycle time.
+",2,1,3,1,2,60,100,100,100
+4153,10,"r","r2",1,FALSE,TRUE,"[]",0,0,0,0,0,0,1,1,0,5,3,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,2,2,3,3,"Pietro","Shuttled 4-5 Pieces for 2468. can shoot but takes alot of time to line up.  
+",1,0,1,1,1,50,100,100,100
+2468,10,"r","r1",4,TRUE,TRUE,"[3, 6]",0,0,2,0,0,0,10,2,0,5,11,0,0,1,0,0,5,1,0,0,FALSE,0,0,FALSE,FALSE,5,5,4,3,"Soriano","Spams rings from source to friendly zone. Then amplifies speaker. Great shooter, great intake, very quick. 
+",6,2,8,1,2,80,37.5,100,16.67
+418,10,"b","b3",4,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,1,1,1,"Duhe","moved in auton like it was supposed to do something more. intake did not work, driver seemed not to know that the robot did not possess a note. failed to pick up note at source three times. driving after discovering that the intake did not work seemed aimless. seemed to try to climb, but nothing happened for a good 20 seconds.",0,1,1,1,0,100,100,100,100
+9492,11,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,3,2,2,"Duhe","froze at amp at start of teleop, blocked other robots on alliance from scoring until about 30 seconds were left. note got stuck in bot, so it did not intake during the last 30 seconds (when it was working).seemed to try to climb, but nothing happened.
+",0,0,0,1,0,NA,100,100,100
+9080,11,"b","b2",4,TRUE,FALSE,"[]",0,0,0,0,0,0,1,0,0,1,0,0,0,2,0,0,0,0,0,0,TRUE,5,0,FALSE,FALSE,1,2,1,2,"Zeb M","Very slow intake. shooter was completely innacurate. Got jammed early in match and just wandered around. Slow climb. Could not even do defense.
+",2,0,2,3,2,50,100,100,100
+7271,11,"b","b1",1,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,1,"Tangey","Couldn't intake, couldn't shoot. Moved in auton and was just bad. modded kitbot.
+",1,0,1,1,1,50,100,100,100
+2582,11,"r","r2",2,TRUE,TRUE,"[3]",0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,TRUE,3,1,FALSE,FALSE,3,1,3,2,"Pietro","Intake jammed twice and generally wasn't good. Tried to play defence half way through but was not aggressive. No clue how shooter preforms. Driver took alot of time to decide on next decision 
+",0,1,1,3,0,100,100,100,100
+9081,11,"r","r1",4,TRUE,FALSE,"[]",0,0,0,0,0,0,2,0,0,3,0,0,0,0,0,0,4,1,0,0,FALSE,0,0,FALSE,FALSE,2,1,2,3,"Soriano","Intake is very slow and robot has trouble carrying rings after they are picked up. Shooter takes a lot of time and is inaccurate- more of a drop than a shot. Speed is decent but robot is very choppy when turning.
+",4,0,4,1,1,80,0,100,0
+3005,11,"r","r3",1,TRUE,TRUE,"[1, 2, 4, 5, 6]",0,0,3,0,0,2,0,1,2,9,0,9,0,0,1,0,3,0,0,0,TRUE,2,1,FALSE,FALSE,4,5,4,4,"Archer Oliver","Driver missed some notes under the stage
+",12,3,15,3,2,88.24,80,100,75
+5908,12,"r","r2",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,1,"Pietro","Played defence against own team - got in the way constantly. Almost clotheslined itself on the chains. Tippy, clunky robot. No ground intake.Stopped on the field half way through
+",0,0,0,1,1,0,100,100,100
+4206,12,"b","b2",2,TRUE,FALSE,"[]",0,0,1,0,0,0,0,0,0,2,1,0,0,0,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,3,2,"Zeb M","It was pretty quick but the intake jammed and the robot did not know what to do the whole time. It eventually got it out but it did not do much for the alliance.
+",0,1,1,1,0,100,100,100,100
+6672,12,"b","b3",1,TRUE,TRUE,"[1, 6, 7]",0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,2,4,4,"Duhe","double intake during auton. chain broke. good defense, but not enough to stop 100+ score from red alliance.
+",0,2,2,1,0,100,100,100,100
+2687,12,"b","b1",4,TRUE,FALSE,"[]",0,0,0,3,0,0,0,0,0,3,1,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,5,4,4,"Tangey","Had some good cycles, but deactivated mid match.
+",1,3,4,1,1,80,100,100,100
+3310,12,"r","r1",2,TRUE,FALSE,"[6, 8]",0,0,1,1,0,1,3,0,0,7,4,1,0,2,1,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,4,3,"Soriano","Shooting: inconsistent, fast but 50% makes and missesIntake: solidSpeed: very quickDriver skill: excellent
+",5,2,7,1,3,70,71.43,100,60
+9752,12,"r","r3",1,TRUE,TRUE,"[1, 2, 3]",0,0,4,0,0,0,4,1,0,5,4,0,0,1,0,0,4,1,0,0,FALSE,0,0,FALSE,FALSE,2,4,4,3,"Archer Oliver","Driver didn't see some notes.Later hit opposing stage, got stuck under and racked up penalties
+",5,4,9,1,2,81.82,55.56,100,20
+8088,13,"r","r3",2,TRUE,FALSE,"[1, 2]",0,0,2,0,0,0,0,3,1,3,5,2,0,0,1,0,0,0,0,0,TRUE,4,0,FALSE,FALSE,4,2,3,2,"Archer Oliver","Driver couldn't see across the field , and got in the way of teamates when picking up notes in their source
+",2,2,4,3,0,100,100,100,100
+9105,13,"b","b1",1,TRUE,TRUE,"[]",0,0,2,0,2,0,5,1,0,1,3,1,0,2,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Tangey","Well rounded. Intake was slightly faulty and attempt on amp failed.
+",3,2,5,1,4,55.56,100,100,100
+4295,13,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,1,0,0,2,0,1,0,0,0,3,0,0,0,0,0,0,TRUE,8,0,FALSE,FALSE,1,1,1,2,"Duhe","really slow driving speed and really slow arm. shooter is super innacurate and often shoots rings that flip in the air. none of its shots really had a chance of success.
+",3,0,3,3,4,42.86,100,100,100
+9156,13,"b","b2",2,TRUE,FALSE,"[]",0,0,0,0,0,0,2,0,0,2,1,0,0,4,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,3,2,2,"Zeb M","was able to intake fine but their shooter either missed or didn't work every time. Very slow. No climb.
+",4,0,4,1,4,50,100,100,100
+418,13,"r","r2",2,TRUE,TRUE,"[7]",0,0,2,0,0,0,5,1,1,3,9,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,3,3,3,"Gordon","fast routes but would often times hit things and could get in the way of other bots
+",1,2,3,1,1,75,100,100,100
+8512,13,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Soriano","Shooter: did not shoot into speaker; shooting at amp took about 6 - 10 secondsIntake: did not seem to have intake deviceSpeed: choppy, kept stopping, slow when at top speedDriver Skill: not great
+",2,0,2,1,0,100,0,100,0
+7321,14,"b","b2",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Zeb M","Deactivated the whole match
+",0,0,0,1,0,NA,100,100,100
+4153,14,"b","b1",4,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,3,2,"Tangey","Defensive, deactivated.
+",0,0,0,1,0,NA,100,100,100
+2468,14,"r","r2",4,TRUE,TRUE,"[1, 2, 3, 6]",0,0,4,0,0,0,2,1,2,5,4,0,0,0,0,0,4,0,0,0,TRUE,4,1,FALSE,FALSE,5,3,5,4,"Gordon","very fast routes and good shooting. Would grab pieces from source and shoot over stage.
+",4,4,8,3,0,100,50,100,0
+2689,14,"r","r3",2,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,TRUE,2,1,FALSE,FALSE,2,2,2,1,"Archer Oliver","Kitbot, only source intake, got a note stuck in the drive train and blocked 2468 from entering until it got removed, only close shooting
+",0,1,1,3,0,100,100,100,100
+7492,14,"r","r1",1,FALSE,FALSE,"[]",0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,3,"Soriano","Shooter: n/a only shot onceIntake: n/a Speed: bulky robot but moves decently wellDriver Skill: good job for a bulky robot
+",0,0,0,1,0,NA,100,100,100
+7534,15,"r","r3",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Archer Oliver","Modified Kitbot, no auton, didn't move or do anything else
+",0,0,0,1,0,NA,100,100,100
+4251,15,"r","r2",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Gordon","kit bot.very choppy movement and got stuck a lot. did not shoot once and kept running into teamates and blocking speaker
+",0,0,0,1,0,NA,100,100,100
+7540,15,"b","b1",4,TRUE,FALSE,"[]",0,0,1,0,0,0,3,0,0,0,2,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,2,3,2,"Tangey","modded kit bot. Intake wasn't amazing, could have been better if not for driver error.
+",1,1,2,1,1,66.67,100,100,100
+7503,15,"b","b3",2,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,4,2,0,0,2,0,0,0,0,0,0,TRUE,30,0,FALSE,FALSE,3,3,5,4,"Duhe","good speed and defense evasion. had struggles with intaking from source. did not seem to have ground pickup. climb took about 30 seconds.
+",2,1,3,3,2,60,100,100,100
+5411,15,"b","b2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,1,2,2,3,7,0,0,0,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,5,4,4,5,"Zeb M","Very fast intake. Bit of a rough start but fixed itself and started to cycle very quickly. Was able to sneak some notes from opponents source several times so good reactions.
+",1,0,1,1,0,100,0,100,0
+2582,15,"r","r1",4,TRUE,FALSE,"[1, 2, 3]",0,0,3,0,0,0,3,2,0,4,5,0,0,0,0,1,2,1,0,0,FALSE,0,0,FALSE,FALSE,3,4,4,3,"Pozo","Pretty good. Do not go underneath the chains and try to get close for shots. Take a while to score at the amp and have a under-bumper ground intake. No climb attempt
+",2,3,5,1,3,62.5,60,100,0
+9080,16,"b","b2",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,TRUE,5,0,FALSE,FALSE,2,2,2,3,"Zeb M","After an initial incident where the node was thrown over the field, it decided to shuttle for the rest of the match but even then it was slow to shuttle.
+",0,0,0,3,1,0,100,100,100
+9492,16,"r","r2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,5,0,0,0,FALSE,0,0,FALSE,FALSE,3,4,3,3,"Gordon","decent rotations but took a while to shoot. kept running into teamates. attempted to climb but took to long and quit
+",5,0,5,1,0,100,0,100,0
+2687,16,"r","r1",4,TRUE,FALSE,"[1]",0,0,2,0,0,0,2,1,0,0,2,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,4,3,"Soriano","Shooter: looked good and very quickIntake: solidSpeed: ver quickDriver Skill: very good*Amazing defense - focused solely on defense this match and did a great job
+",1,2,3,1,1,75,100,100,100
+7506,16,"b","b1",2,TRUE,TRUE,"[]",0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,3,2,"Tangey","Seemed to have no idea what it was doing. Driver had trouble intaing notes.
+",1,1,2,1,0,100,50,100,0
+3310,16,"b","b3",1,TRUE,TRUE,"[2, 3]",0,0,3,0,0,0,3,1,0,5,2,4,0,1,0,0,1,0,1,0,TRUE,5,0,FALSE,FALSE,4,4,5,5,"Duhe","shooting is very good, but it did have to extake two notes onto the ground and pick them up again. great speed and good intake. however, the intake occasionally drops a note from the source. good defense evasion.
+",7,3,11,3,1,91.67,80,100,71.43
+9088,16,"r","r3",2,TRUE,FALSE,"[8]",0,0,1,0,1,0,3,1,3,1,5,1,0,2,2,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,3,3,3,"Archer Oliver","Shooter had trouble aligning, PID issues? tried to stay out of other teamates's way
+",3,1,4,1,3,57.14,100,100,100
+9407,17,"r","r1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Soriano","Literally only played defense.
+",0,0,0,1,0,NA,100,100,100
+418,17,"b","b1",2,TRUE,FALSE,"[]",0,0,1,0,0,0,3,0,0,2,2,0,0,0,0,0,4,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,4,4,"Tangey","No climb, but mainly an amp shooter. Can shoot both speaker and amp.
+",4,1,5,1,0,100,20,100,0
+3005,17,"b","b3",1,TRUE,TRUE,"[6, 7]",0,0,2,1,0,0,0,3,1,3,3,2,0,0,0,0,0,0,0,0,TRUE,15,1,FALSE,TRUE,5,5,5,4,"Duhe","generally good driving, but wow this team 6672 did some crazy defense.
+",2,3,5,3,0,100,100,100,100
+2689,17,"b","b2",4,TRUE,FALSE,"[]",0,0,1,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,TRUE,6,1,FALSE,FALSE,4,3,3,3,"Zeb M","decent enough cycling. intook source notes as they fell. Slow climb
+",0,1,1,3,0,100,100,100,100
+6672,17,"r","r2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,5,5,"Gordon","broke. good defense but other teams would just spin out of reach
+",0,0,0,1,0,NA,100,100,100
+9752,18,"r","r2",4,TRUE,TRUE,"[1, 2, 3]",0,0,4,0,0,0,7,2,0,5,9,1,0,0,1,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,5,3,5,3,"Gordon","good shooting and rotations. took a little time to shoot. got stuck and ran into a lot of things near source
+",2,4,6,1,0,100,83.33,100,50
+4153,18,"b","b1",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,2,3,3,4,"Tangey","SHUTTLEBOT!!! Good driving, but terrible shooter.
+",1,0,1,1,1,50,100,100,100
+4295,18,"b","b2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,TRUE,6,1,FALSE,TRUE,1,1,2,1,"Zeb M","Seemed like it would just push notes inorder to shuttle but then decided to just wander around for most of the match. Very slow and janky looking climb.
+",1,0,1,3,0,100,0,100,0
+9156,18,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,2,0,1,0,0,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,2,3,"Soriano","Shooting was very miscalculated. Did not make a shot.Intake: nothing to take note ofSpeed: robot could move but not well/fastDriver Skill: decent
+",2,0,2,1,2,50,100,100,100
+7540,18,"r","r3",2,TRUE,FALSE,"[]",0,0,0,0,1,0,3,1,0,0,0,0,0,2,0,0,0,2,0,0,FALSE,0,0,FALSE,FALSE,1,2,1,1,"Archer Oliver","Very slow, shooter didn't have enough power to reach speaker, note got stuck in shooter quickly.
+",2,0,2,1,5,28.57,100,100,100
+5411,18,"b","b3",4,TRUE,TRUE,"[]",0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,1,0,0,FALSE,0,0,FALSE,FALSE,2,3,2,1,"Duhe","shooter is really wobbly. defense prevented it from getting to the stage in time for climbing. seemed to just stroll around aimlessly for most of teleop. failed to shoot note during auton, so it shot it during teleop. got note stuck in robot and could not get it off (too slow probably)
+",0,0,0,1,1,0,100,100,100
+7506,19,"r","r3",1,TRUE,FALSE,"[]",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,1,"Archer Oliver","Didn't do much except block teamates way.
+",0,1,1,1,0,100,100,100,100
+4251,19,"b","b2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Zeb M","had a preload but never shot it. simply wandered the whole match. Got fouls for its own team trying to defend opponent source
+",0,0,0,1,0,NA,100,100,100
+7503,19,"b","b1",4,TRUE,TRUE,"[3]",0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,2,1,"Tangey","Auton as good. scored 10 of the 13 points for the team. Driver was terrible cuz ran over note and deactivated.
+",0,2,2,1,0,100,100,100,100
+8088,19,"r","r1",4,TRUE,TRUE,"[1, 2]",0,0,2,0,0,0,3,1,1,2,3,0,0,0,0,0,3,1,0,0,TRUE,4,0,FALSE,FALSE,3,3,3,4,"Soriano","Pretty average robot overall. Did every task moderately well and lacked mistakes. Driver was great at avoiding obstacles. Shooting was slow but not incredibly slow.
+",3,2,5,3,1,83.33,40,100,0
+4206,19,"r","r2",2,TRUE,FALSE,"[]",0,0,0,0,0,0,2,5,1,0,0,3,0,0,2,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,3,3,"Gordon","intake got very slow at times. took a while to shoot. some shots seemed underpowered
+",3,0,3,1,0,100,100,100,100
+9088,20,"r","r1",4,TRUE,TRUE,"[2]",0,0,2,0,0,0,4,0,0,1,4,0,0,0,0,0,0,1,0,0,FALSE,0,0,FALSE,FALSE,4,2,3,3,"Soriano","Shoots into speaker very wellIntake is average Speed is good but slows down every once in a whileDriver skill is above average - controls robot well and plays good defense
+",0,2,2,1,1,66.67,100,100,100
+5908,20,"b","b1",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,1,"Max","Very jank intake/shooter. Cannot intake from ground and tried to intake from source but could not. Something sounded like it was grinding and rattling on that bot at some point. 
+",0,0,0,1,0,NA,100,100,100
+9105,20,"b","b3",2,TRUE,TRUE,"[]",0,0,0,0,1,0,0,2,0,4,3,2,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,3,3,"Pozo","Can not adjust climb and must go at chain from specific spot. Can shoot pretty well as long as they are directly in front of speaker even if its from the stage. Can quickly pick stuff up off the ground
+",2,0,2,1,1,66.67,100,100,100
+2468,20,"b","b2",4,TRUE,FALSE,"[2, 3]",0,0,3,0,0,0,1,2,0,7,3,0,0,0,0,0,7,0,0,0,TRUE,5,0,TRUE,FALSE,4,4,5,3,"Pena","went with spamming source then amplifying speaker strat 
+",7,3,10,4,0,100,30,100,0
+7321,21,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Pozo","It no move till last ten seconds and then it just jittered
+",0,0,0,1,0,NA,100,100,100
+9081,21,"r","r3",4,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Henry Horvat","technical difficulties w/ scouting, couldn,t scout
+",0,0,0,1,0,NA,100,100,100
+2582,21,"b","b2",4,TRUE,TRUE,"[]",0,0,1,0,0,0,4,1,0,4,4,0,0,4,0,0,1,0,0,0,TRUE,8,1,FALSE,FALSE,2,4,3,2,"Pena","very fast cycles but airballs way too much, great reach on climb in order to achieve double climb
+",5,1,6,3,4,60,83.33,100,80
+6672,21,"b","b1",2,TRUE,TRUE,"[]",0,0,0,0,0,0,2,2,0,3,9,0,0,0,0,0,0,0,0,0,TRUE,9,1,FALSE,FALSE,5,5,5,5,"Max","Very consistent shots. Goated robor. 
+",0,0,0,3,0,NA,100,100,100
+4295,21,"r","r3",2,TRUE,FALSE,"[]",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,2,2,"Poon","Did not shoot the entire time. 1 note auto (missed). Stood around in the middle of the field for the entire match, trying to play defense? No climb. Intake seems to be extremely clunky and unstable (doesn't work).
+",0,0,0,1,1,0,100,100,100
+9492,21,"r","r2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,6,0,0,2,6,0,0,2,0,0,0,0,0,0,TRUE,5,0,FALSE,FALSE,5,4,3,4,"sahil","consistent shooter, iffy intake at times but majority of time was good. speed was mediocre, and nothing special nor bad about driver skill
+",2,0,2,3,2,50,100,100,100
+4251,22,"r","r1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Henry Horvat","couldn't shoot, so tried defense... not much was defended
+",0,0,0,1,0,NA,100,100,100
+7492,22,"b","b3",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,3,4,"Pozo","Was able to draw fouls for its team while playing defence. All fould drawn and foul commited was at its source (in auton it shot its note out into the neutral zone and besides that it did not try to intake a note)
+",0,0,0,1,0,NA,100,100,100
+9080,22,"b","b1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Max","Very slow bot, very slow arm. Tried playing a little defense but the slowness of the bot was not helping. Tried to climb but failed. 
+",2,0,2,1,0,100,0,100,0
+9156,22,"r","r2",1,TRUE,TRUE,"[]",0,0,0,0,0,0,5,2,0,0,1,0,0,7,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,3,3,"sahil","when shooting and intaking,note kept sliding out of the compartment and when shot it was inaccurate.
+",7,0,7,1,7,50,100,100,100
+8512,22,"b","b2",1,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,3,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,2,3,"Pena","took too long to cycle, intake, and position itself to shoot, only went for amp
+",3,0,3,1,0,100,0,100,0
+7540,22,"r","r3",4,TRUE,FALSE,"[]",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,2,"Poon","1 note auto. That missed. That was the only shot they took the entire game. Died for about 40 seconds before being trapped in the corner by another team that died. Intake not intaking. Shooter not shooting. Robot not cooking.
+",0,0,0,1,1,0,100,100,100
+5908,23,"r","r2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"sahil","didnt move: no data
+",0,0,0,1,0,NA,100,100,100
+5411,23,"r","r3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,6,0,0,3,5,0,0,2,0,0,2,1,0,0,FALSE,0,0,FALSE,FALSE,4,4,3,3,"Henry Horvat","an ok robotdidn't ingage in defensefairly accurate
+",4,1,5,1,3,62.5,60,100,50
+3005,23,"b","b1",1,TRUE,TRUE,"[1, 2, 4]",0,0,4,0,0,0,9,4,0,0,10,2,0,0,1,0,7,0,0,0,TRUE,2,0,FALSE,FALSE,5,5,5,5,"Max","Amazing auton, outstanding cycle times, so fast it's hard to keep up. Very fast climb as well.
+",9,4,13,3,0,100,46.15,100,22.22
+8088,23,"b","b2",4,TRUE,FALSE,"[]",0,0,1,0,0,0,1,0,0,5,4,1,1,1,0,0,0,0,0,0,TRUE,5,0,FALSE,FALSE,5,3,4,4,"Pena","great climb, more strong in mid than close shooting, i think got fouled for having 2 notes
+",3,1,4,3,1,80,100,100,100
+3310,23,"b","b3",2,TRUE,TRUE,"[]",0,0,0,0,1,0,0,2,0,10,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,4,5,4,4,"Pozo","Almost fell on climb so decided to park. Intake at source get to around midfield and shoot near speaker/amp to 3005 where they quickly intake and score. Most likely how playoffs will look",0,0,0,1,1,0,100,100,100
+418,23,"r","r3",4,TRUE,TRUE,"[]",0,0,1,0,0,0,3,1,0,4,4,0,0,1,1,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Poon","Auto went wrong by crashing into the boundaries, still made one though. Intake ok, some issues with bumper preventing note from being intaked. Shooter could be more accurate. Decent?
+",2,1,3,1,1,75,66.67,100,50
+4153,24,"b","b3",3,TRUE,TRUE,"[]",0,0,0,0,0,0,2,0,0,0,0,0,0,2,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,3,3,3,"Pozo","Defence was attempted after multiple weak shots at speaker. Not bad but not fully committed either. 
+",2,0,2,1,2,50,100,100,100
+7534,24,"b","b2",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Pena","didnt even move for most of the game a lot of trouble turning spent all of teleop trying to shoot 1 note in amp and didnt even make it 
+",0,0,0,1,0,NA,100,100,100
+2687,24,"b","b1",4,TRUE,TRUE,"[1, 2]",0,0,3,0,0,0,3,1,0,7,7,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,4,4,5,"Max","Great cycle times. Missed a piece in auton though. 
+",2,3,5,1,2,71.43,100,100,100
+7503,24,"r","r2",4,TRUE,FALSE,"[]",0,0,0,0,1,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,TRUE,2,0,FALSE,FALSE,1,1,3,3,"sahil","cant intake off ground. less speed than most bots. driver wasnt the smartest in maneuvering but they were good at playing defense. the shooter was also inaccurate .
+",2,0,2,3,3,40,100,100,100
+4206,24,"r","r3",1,TRUE,TRUE,"[1]",0,0,0,1,0,2,7,2,1,5,0,12,0,0,3,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,5,4,4,"Poon","Missed a couple shots in auto, cleaned up the friendly zone after auto. A very speedy boy with fast intake and interesting shooter. Driver missed some shots by doing an amp shot while aiming for spk, or vice versa. Nice.
+",12,1,13,1,2,86.67,100,100,100
+9407,24,"r","r1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,5,3,"Henry Horvat","played defense, was ok
+",0,0,0,1,0,NA,100,100,100
+7506,25,"b","b2",2,TRUE,FALSE,"[]",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,4,2,"Pena","slow moving, horrible defense, slighlty janky and top heavy
+",0,0,0,1,1,0,100,100,100
+2468,25,"r","r2",4,TRUE,TRUE,"[1, 2, 3, 6]",0,0,4,0,1,0,7,2,0,6,9,0,0,3,0,0,3,0,0,0,FALSE,0,0,FALSE,FALSE,5,4,4,3,"sahil","can score both amp and speaker with consistency.driver shot too early a couple times but is good at maneuvering.
+",6,4,10,1,4,71.43,70,100,50
+2582,25,"b","b1",4,TRUE,TRUE,"[]",0,0,1,0,0,0,7,0,0,3,3,0,0,0,0,0,5,0,0,0,FALSE,0,0,FALSE,FALSE,3,4,4,4,"Max","Spent most of the time scoring amp, which led to amplifications but those were not spent in the best ways. Tried to climb but did not have enough time. 
+",5,1,6,1,0,100,16.67,100,0
+9492,25,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,2,1,0,1,0,1,0,4,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,3,3,2,"Pozo","Cant shoot well and its cycle times were very slow. Had to constantly rebound its misses but could never score. None were short multiple would hit inside then come out 
+",5,0,5,1,4,55.56,100,100,100
+9088,25,"r","r3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,2,1,1,2,4,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,3,2,"Poon","1 note auto. Respectable. Picked up some notes that 2468 was shuttling. This could be a driver or robot issue, but a couple of times it used low power (maybe for the amp to shoot at a spk, vice versa). This was a common mistake by teams today. Truly one of the bots of all time.
+",2,1,3,1,2,60,100,100,100
+9105,25,"r","r1",1,TRUE,FALSE,"[]",0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,7,1,FALSE,FALSE,4,1,2,4,"Henry Horvat","slow during auton, got a piece stuck on them, played dfense and camped subwoofer, double climbed
+",0,1,1,3,1,50,100,100,100
+9081,26,"b","b1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,3,2,"Max","Very poor intake. Amp bot but takes a very long time to score amp. 
+",2,0,2,1,0,100,0,100,0
+9752,26,"b","b2",4,TRUE,FALSE,"[1, 2, 3]",0,0,2,0,0,0,4,2,0,3,6,0,0,3,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,4,5,"Pena","good cycle time, was able to play great offense and defense
+",3,2,5,1,3,62.5,100,100,100
+2689,26,"r","r2",2,TRUE,TRUE,"[]",0,0,0,0,1,0,0,0,0,4,2,0,0,2,0,0,0,0,0,0,TRUE,7,1,FALSE,FALSE,2,2,4,2,"sahil","inaccurate shooter with not that much power. it cant receive off the ground. its climb function is very consistent tho but the driver kept bumping into obstacles and missing shots.
+",2,0,2,3,3,40,100,100,100
+4251,26,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,2,2,"Pozo","Kitbot. defense by slightly moving back and forth and it somehow worked. Never got rid of its preload and never entered neutral zone
+",0,0,0,1,0,NA,100,100,100
+7271,26,"r","r3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,2,2,"Poon","Liability in auto. Messed up 2689 auto positioning. Shooter missed every shot. Intake kind of slow. Just mid.
+",3,0,3,1,3,50,100,100,100
+4295,26,"r","r1",2,TRUE,FALSE,"[]",0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,2,1,"Henry Horvat","tried its best to get one in the amp, but shot the note out backwards...poor intake slow robot.
+",0,0,0,1,1,0,100,100,100
+7540,27,"r","r2",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,1,"sahil","terrible driver. misfired, bumped into something such that the bot broke and didnt move for the rest of the match. no data on the rest.
+",1,0,1,1,1,50,100,100,100
+418,27,"b","b1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,3,0,0,1,3,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,1,"Max","The bot was fair, but the driver was not great. There was much seemingly aimless wandering going on during the match. 
+",2,0,2,1,2,50,100,100,100
+7503,27,"b","b2",4,TRUE,FALSE,"[3]",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,15,0,FALSE,FALSE,1,1,1,2,"Pena","i dont even know what the driver was doing. Offense? Defense? no idea. just rumbled around and did nothing. 
+",0,1,1,3,0,100,100,100,100
+3310,27,"r","r3",1,TRUE,FALSE,"[1, 2, 3]",0,0,1,2,0,0,4,3,0,4,2,7,0,0,2,0,1,0,0,0,TRUE,3,0,FALSE,FALSE,4,5,4,4,"Poon","3 piece auto. Fast and slightly aggro bot/driver. Missed some mid spk due to lack of aimbot. Capability of shooting next to spk may be hindered by 7540 stopping in front of it. Good bot.
+",8,3,11,3,0,100,90.91,100,87.5
+7534,28,"b","b2",1,FALSE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Pena","didnt show up
+",0,0,0,1,0,NA,100,100,100
+9407,28,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,3,1,4,3,"Pozo","Fast and twitchy but can't intake from ground. Resorted to defense, but is very light and easy to get pushed around. Tried to shuttle by lushing but decided against it. No climbing mechanism 
+",0,0,0,1,0,NA,100,100,100
+7321,28,"r","r2",4,TRUE,FALSE,"[2]",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,3,3,3,"sahil","didnt move much at all: no data. seems like its shooter malfunctioned tho.
+",1,0,1,1,1,50,100,100,100
+9156,28,"b","b1",1,TRUE,TRUE,"[2]",0,0,1,0,1,0,6,0,0,1,1,0,0,6,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,1,2,"Max","Very slow arm with a very inconsistent shooter, missing almost every shot. Jancc
+",8,1,9,1,7,56.25,77.78,100,75
+9492,27,"r","r1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,3,0,0,2,0,0,0,3,0,0,2,0,0,0,TRUE,3,0,FALSE,FALSE,2,3,1,2,"Henry Horvat","slow and cumbersome. every time he tried to get a note from the source he got very easily blocked.
+",5,0,5,3,3,62.5,60,100,60
+3005,28,"r","r3",1,TRUE,TRUE,"[1, 4, 5, 6]",0,0,0,3,0,1,5,3,1,6,3,10,0,0,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,5,5,4,"Poon","Intake and shooting really fast (3-4 notes in like 5 secs, that were all in friendly zone), good at outmaneuvering defense from 9407. Auto a little scuffed this time, but still great. A little greedy at the end going for the ranking point on the climb, should've taken the free spot instead of trying to get on with 9492. Pro bot.
+",10,3,13,1,1,92.86,100,100,100
+5908,28,"r","r1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Henry Horvat","disabled
+",0,0,0,1,0,NA,100,100,100
+2468,29,"b","b2",4,TRUE,TRUE,"[]",0,0,1,0,0,0,4,0,0,5,4,0,0,1,0,0,3,1,0,0,TRUE,5,1,FALSE,FALSE,4,4,5,4,"Pena","foul for having 2 notes, went for amp first then fast cycles to score in the amplified speaker. 
+",4,1,5,3,2,71.43,40,100,25
+2687,29,"r","r2",4,TRUE,TRUE,"[1, 2]",0,0,3,0,0,0,2,3,0,7,11,0,0,0,0,0,1,1,0,0,TRUE,3,0,FALSE,FALSE,5,5,4,5,"sahil","consistent shooting. the driver was really good with maneuvering through objects and accuracy. well rounded as it can shoot through amp.
+",1,3,4,3,1,80,75,100,0
+2582,29,"b","b1",2,TRUE,TRUE,"[]",0,0,0,0,1,0,4,1,0,5,2,0,0,1,0,0,5,0,0,0,TRUE,2,1,FALSE,FALSE,4,5,4,4,"Max","Pretty good robot. Scored both amp and speaker. 
+",6,0,6,3,2,75,16.67,100,16.67
+7271,29,"r","r3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Poon","Auto goal was to simply score points via mobility, crashed into stage and was out for the rest of the match. Very unfortunate. 
+",0,0,0,1,0,NA,100,100,100
+7492,29,"r","r1",1,FALSE,TRUE,"[1]",0,0,0,0,0,0,6,0,0,4,5,1,0,3,1,0,0,0,0,0,TRUE,3,0,FALSE,FALSE,3,4,4,4,"Henry Horvat","decent robot. ave speed. 
+",4,0,4,3,3,57.14,100,100,100
+9105,30,"b","b1",2,TRUE,TRUE,"[]",0,0,0,0,1,0,1,2,0,3,4,2,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,4,5,"Max","Pretty good robot. Tried to climb but did not have enough time. Made some shots at a little distance from the speaker.
+",3,0,3,1,2,60,100,100,100
+9081,30,"r","r2",2,TRUE,TRUE,"[]",0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,3,1,0,0,FALSE,0,0,FALSE,FALSE,3,2,2,1,"sahil","driver was terrible at taking turns and the robot itself was pretty slow. intake was also unnecessarily complicated. it only took amp shots.
+",3,0,3,1,1,75,0,100,0
+8512,30,"r","r3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,1,2,"Poon","Does nothing in auto. Very slow intake and shooter. Bot is unstable so can't go fast. Kind of sits around and does nothing but very slow cycles.
+",2,0,2,1,0,100,0,100,0
+8088,30,"b","b2",1,TRUE,TRUE,"[]",0,0,0,0,1,0,3,2,0,6,6,3,1,1,0,0,0,0,0,0,TRUE,5,0,FALSE,FALSE,3,4,4,3,"Pena","better at ranged shots than close
+",5,0,5,3,2,71.43,100,100,100
+7506,31,"b","b2",2,TRUE,FALSE,"[]",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,2,"Pie","Auton got stuck on stage. Robot spassamed for the rest of the match.
+",0,1,1,1,0,100,100,100,100
+4206,31,"r","r2",1,TRUE,FALSE,"[1]",0,0,0,0,1,1,8,3,0,3,1,6,0,0,6,0,0,1,0,0,FALSE,0,0,FALSE,FALSE,2,4,4,3,"Archer Oliver","Shooter had some issues with shooting mid, driver didn't go foir closeby notes when he couldn't see it
+",6,0,6,1,3,66.67,100,100,100
+9088,31,"b","b3",4,TRUE,TRUE,"[2]",0,0,2,0,0,0,4,0,0,5,9,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,2,4,4,"gordon","fast rotations and very consistent. intake took a while to pick up. rarely ran into anything
+",0,2,2,1,0,100,100,100,100
+2689,31,"r","r1",4,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,4,1,0,0,3,0,0,0,0,0,0,TRUE,15,0,FALSE,FALSE,2,3,3,3,"Duhe","tried and failed to intake and shoot another note in auton. shooter is too weak, but the aim is perfect (although it only shoots close). no ground intake, so it can't salvage missed shots (though other bots might).
+",3,1,4,3,3,57.14,100,100,100
+4153,31,"r","r3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,3,3,"Poon","Played defense against 6672. However, James' illustrious wisdom and experience allowed him to negate such futile tricks upon his driving skill. Did nothing during auto. Missed a couple shots from mid spk then played defense (see above.) No climb tho.
+",1,0,1,1,0,100,100,100,100
+6672,31,"b","b1",1,TRUE,FALSE,"[2, 4]",0,0,0,0,3,0,4,1,0,4,6,0,0,4,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,4,5,"Zeb M","had some problems early on but figured them out. Tried to run fast into the chain inorder to climb but it did not work.
+",5,0,5,1,7,41.67,80,100,80
+7321,32,"r","r3",2,FALSE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Poon","Didn't show up lol.
+",0,0,0,1,0,NA,100,100,100
+7271,32,"b","b1",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,2,"Zeb M","could only intake from source. shooter was completely innacurate. 
+",3,0,3,1,3,50,100,100,100
+9156,32,"r","r2",4,TRUE,TRUE,"[2]",0,0,2,0,0,0,3,1,0,0,0,0,0,2,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,2,"Archer Oliver","Intake and shooter combo; had issues intaking off the ground and shooting, randomly extaked, died infront of the speaker
+",2,2,4,1,2,66.67,100,100,100
+3005,32,"b","b2",1,TRUE,TRUE,"[1, 4, 5]",0,0,4,0,0,0,9,8,0,0,5,6,1,0,0,0,6,0,0,0,TRUE,4,1,FALSE,FALSE,5,4,5,5,"Pie","Fast cycles with a feederbot
+",13,4,17,3,0,100,64.71,100,53.85
+9080,32,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,5,1,0,0,0,0,0,0,0,0,3,5,0,0,FALSE,0,0,FALSE,FALSE,1,2,2,2,"Duhe","tried to score preload in amp for a minute perhaps at the strat of teleop, failed and had to reintake many times. its parts move slowly and its driving is rather slow. seemed to realize that it was too late to climb at the end of the match (time management issue perhaps).
+",3,0,3,1,5,37.5,0,100,0
+9081,33,"b","b2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,4,0,0,1,0,0,0,0,0,0,5,0,0,0,FALSE,0,0,FALSE,FALSE,1,2,2,3,"Pie","Amp only. Peacock peck intake is slow and takes a few tries but works. Driver is short sighted and will only go for closest piece even if it blocks teammates. 
+",5,0,5,1,0,100,0,100,0
+7492,33,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,1,"Duhe","shot during auton was not close at all. accidentially extended climb in the middle of teleop inside of the stage. thus, it was basically disabled for the rest of the match. it did not even attempt to climb, so perhaps it broke??? driving was slow and sometimes purposeless. intake worked well for the first note only.
+",1,0,1,1,1,50,0,100,0
+2687,33,"r","r2",4,TRUE,TRUE,"[1, 2, 3]",0,0,4,0,0,0,1,1,0,9,10,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,4,5,4,"Archer Oliver","Intake had some trouble intaking from the side, but overall was great. Shooting was only from close. Driver had issuses getting around bots blocking movement
+",0,4,4,1,0,100,100,100,100
+5411,33,"b","b3",4,TRUE,TRUE,"[2]",0,0,0,0,1,0,3,1,0,6,5,0,0,4,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,4,3,4,"gordon","fast rotations and was able to avoid defense well. shooter would not stay still and was often bobbing when shooting
+",4,0,4,1,5,44.44,100,100,100
+9105,33,"r","r3",2,TRUE,TRUE,"[]",0,0,1,0,0,0,0,2,0,5,5,1,0,0,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Poon","Good bot. Shot one in auto and mobility, good shooting.
+",1,1,2,1,0,100,100,100,100
+7540,34,"b","b3",4,TRUE,FALSE,"[]",0,0,1,0,0,0,2,1,0,0,3,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,1,1,1,"gordon","took a loooong time to pick up anything. the shooter was very underpowered and was barely making it into the speaker
+",0,1,1,1,0,100,100,100,100
+2582,34,"r","r3",2,FALSE,TRUE,"[]",0,0,0,0,1,0,0,1,0,6,1,0,0,0,0,0,5,1,0,0,FALSE,0,0,FALSE,FALSE,3,3,4,4,"Soriano","Shooter: good, has difficulty moving side to side when aimingIntake: preetty averageSpeed: above average, though a little out of controlDriver Skill: good
+",5,0,5,1,2,71.43,0,100,0
+4153,34,"r","r2",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,4,3,"Archer Oliver","some issue kept the robot from shooting, or the team decided to only do defense. Indescisive early on, but did great defense later on, helping win the match
+",0,0,0,1,0,NA,100,100,100
+8088,34,"r","r1",4,TRUE,TRUE,"[1]",0,0,2,0,0,0,5,1,0,5,8,0,0,2,0,0,0,0,0,0,TRUE,5,0,FALSE,FALSE,4,5,5,4,"Duhe","climbed at edge of the chain, so it has the potential for climb partners. driving was fast and overall good, but at times it was not very graceful (crashing into field elements and other robots).shooter was accurate, but such accuracy fell off at the end of teleop.
+",2,2,4,3,2,66.67,100,100,100
+8512,34,"b","b2",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,3,2,"Pie","any defence or contact and the piece fall out of the basket intake. Must intake from source SLOWLY and cloggs traffic. Only amp 
+",2,0,2,1,0,100,0,100,0
+2689,35,"b","b2",1,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,TRUE,8,1,FALSE,FALSE,3,2,4,4,"Pie","Source only intake. Must shoot from middle close of speaker. Pretty fast and decisive. 
+",0,1,1,3,0,100,100,100,100
+418,35,"r","r3",2,FALSE,TRUE,"[]",0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,2,3,3,"Soriano","Shooter: sub-parIntake: rings would get stuck within robotSpeed: averageDriver Skill: average
+",0,0,0,1,0,NA,100,100,100
+7534,35,"r","r1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Duhe","really wobbly tank drive. struggled and failed to shoot preload for the first half of teleop. was a slight annoyance for 3310 trying to shoot in amp. for the second half of teleop, the bot just tried and miserably failed to pick up a single note. it eventually intook it, but then soon extook it. no auton.
+",0,0,0,1,1,0,100,100,100
+3310,35,"r","r2",1,TRUE,FALSE,"[]",0,0,1,0,0,0,3,0,0,6,5,0,0,2,0,0,3,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,5,5,"Archer Oliver","Auton broke, quick source runs, but shooter became unreliable overtime
+",5,1,6,1,2,75,50,100,40
+9407,36,"b","b3",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"gordon","did not move
+",0,0,0,1,0,NA,100,100,100
+9088,36,"b","b2",4,TRUE,TRUE,"[]",0,0,1,0,0,0,4,3,1,4,11,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,4,5,5,"Pie","Auton missed but otherwise very effective intaking, shooting, and avoiding defence. Tried to steal pieces and be aggressive
+",1,1,2,1,1,66.67,100,100,100
+7503,36,"r","r2",4,TRUE,FALSE,"[2]",0,0,2,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,TRUE,4,0,FALSE,FALSE,3,2,4,3,"Archer Oliver","had a ground intake, but never used it. Only source pickups. Close range speaker was reliable, but had a lot of wiggle.
+",0,2,2,3,0,100,100,100,100
+9492,36,"b","b1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,5,0,0,0,FALSE,0,0,FALSE,FALSE,4,5,3,2,"Zeb M","intake was good. only went to the amp. Struggled to go to the source and grab nodes near the end. I don't know why. Didn't climb
+",5,0,5,1,0,100,0,100,0
+7506,36,"r","r3",1,TRUE,FALSE,"[]",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Soriano","Shooter: missed its only shot, shoots very gently, not farIntake: did not intake - started preloadedSpeed: stayed in one spot for entirety of match, therefore n/aDriver Skill: n/a - did not drive anywhere really
+",0,0,0,1,1,0,100,100,100
+4295,36,"r","r1",2,TRUE,FALSE,"[]",0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,1,1,0,0,FALSE,0,0,FALSE,FALSE,2,2,2,1,"Duhe","driver could not tell when the robot was not picking up the notes (the robot moved backwards as if it did intake sometimes when it, in fact, did not). sometimes moved shooter the wrong way, thus making shooting amp harder. tried (largely ineffectively) to play defense in the choke point between the stage and the enemy source for most of teleop.
+",1,0,1,1,2,33.33,0,100,0
+5908,37,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Duhe","no show
+",0,0,0,1,0,NA,100,100,100
+8088,37,"b","b3",4,TRUE,FALSE,"[1]",0,0,2,0,0,0,1,3,1,4,4,0,0,4,1,0,0,0,0,0,TRUE,3,0,FALSE,FALSE,1,3,3,3,"gordon","shooter struggled a lot. intake was slow in the source and had to ram into walls to pick up. very fast and efficient climb on the far side of chain allowing for more space for other bots
+",4,2,6,3,4,60,100,100,100
+9080,37,"b","b1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,4,0,0,0,FALSE,0,0,FALSE,FALSE,2,3,2,2,"Zeb M","only scored in the amp. intake and scorer are janky and slightly unreliable (getting caught in system, though both times it got fixed). 
+",4,0,4,1,0,100,0,100,0
+9081,37,"r","r2",1,TRUE,TRUE,"[]",0,0,0,0,0,0,2,0,0,0,0,0,0,1,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Archer Oliver","Intake barely worked, got a ring stuck in the chassis. Shooter was on an arm which wobbled a lot, and very slow. Movements were very jerky, and when the ring got stuck in the robot, driver spent majority of the time trying to get it out instead of playing defense or climbing.
+",2,0,2,1,1,66.67,50,100,50
+7540,37,"b","b2",2,TRUE,FALSE,"[]",0,0,1,0,0,0,1,3,0,1,6,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,2,3,"Pie","Took driver a few seconds to get oriented. Slow shooter but effective. Tried to sit on red pieces from source to stop red intake but ended up recieving a tech for holding a piece and controlling a second. Driver know what they are doing but has a slight problem with orientation
+",0,1,1,1,0,100,100,100,100
+7321,37,"r","r3",4,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,3,2,"Soriano","Shooter: light, can't shoot farIntake: horrible, source had to aim at top and throw ring in - can't pick up rings from groundSpeed: decentDriver Skill: average
+",1,0,1,1,1,50,100,100,100
+2582,38,"b","b3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0,TRUE,15,0,TRUE,FALSE,2,3,2,3,"gordon","fast rotations but struggled to get out of defense. took a long time to shoot at amp and line up for speaker
+",1,1,2,4,0,100,50,100,0
+7534,38,"r","r2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,2,"Archer Oliver","didn't shoot or intake. Z\Tried to defend, but only placed themselves in the way without moving much. Was pushed around alot, very top heavy and weak drive 
+",0,0,0,1,0,NA,100,100,100
+418,38,"b","b1",4,TRUE,FALSE,"[]",0,0,1,0,0,0,9,0,0,1,5,2,0,0,1,0,2,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,3,4,"Zeb M","decent cycle times. struggled at points. no climb. tried a couple midshots but weren't very accurate so returned to close shots.
+",4,1,5,1,0,100,60,100,50
+2468,38,"r","r1",2,TRUE,TRUE,"[7, 8]",0,0,1,0,0,2,1,1,0,12,6,1,0,0,3,0,1,0,0,0,FALSE,0,0,FALSE,TRUE,4,5,5,4,"Duhe","very close to climbing, just one corner hanging on the ground (with 1 partner). Very good speed. shuttled a lot by shooting from source. at the start of teleop, however, it overshot quite a few shots. also, it crashed somewhat frequently into the walls.
+",2,1,3,1,2,60,66.67,100,50
+9156,38,"b","b2",1,TRUE,FALSE,"[]",0,0,0,0,1,0,1,0,0,4,0,0,0,3,0,0,0,2,0,0,FALSE,0,0,FALSE,TRUE,1,3,3,3,"roman","just shuttled pieces from source to amp or speaker, consistent cycle path
+",3,0,3,1,6,33.33,100,100,100
+9752,38,"r","r3",4,TRUE,TRUE,"[1, 2]",0,0,4,0,0,0,5,1,1,5,5,0,0,2,0,0,5,0,0,0,FALSE,0,0,FALSE,FALSE,4,5,5,5,"Soriano","Shooter: missed a few but shot very wellIntake: great intake, no trouble gettings ringsSpeed: very quick, movements are smooth and not blockyDriver Skill: 8/10, very good
+",7,4,11,1,2,84.62,54.55,100,28.57
+7492,39,"b","b2",1,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,3,1,1,"roman","did not show up
+",0,0,0,1,0,NA,100,100,100
+4206,39,"b","b1",1,TRUE,TRUE,"[4]",0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,4,4,"Zeb M","had a jam in intake/shooter system at very beginning and played some very rough defense for the rest of the game. Did not recieve fouls however.
+",0,0,0,1,1,0,100,100,100
+2687,39,"r","r3",4,TRUE,TRUE,"[]",0,0,2,0,0,0,2,1,3,2,8,0,0,0,0,0,0,2,0,0,FALSE,0,0,FALSE,FALSE,4,4,4,5,"Soriano","Shooter: very good shooter with regards to speaker - poor shooting with ampIntake: very solidSpeed: very good speed, no blockly movementsDriver Skill: excellent
+",0,2,2,1,2,50,100,100,100
+2689,39,"r","r1",1,TRUE,TRUE,"[]",0,0,1,0,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,4,3,4,3,"Duhe","decently prone to defense. minimal auton. shooter strength was not a problem this round.
+",0,1,1,1,0,100,100,100,100
+4295,39,"b","b3",2,TRUE,FALSE,"[]",0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,3,"gordon","disc got stuck in intake and spent entire match trying to get it out. Before that, it played good defense and almost completely locked down the source
+",0,0,0,1,1,0,100,100,100
+3310,40,"r","r2",1,FALSE,FALSE,"[1, 2, 3]",0,0,3,0,0,0,7,4,1,3,11,1,0,1,1,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,4,5,5,4,"Archer Oliver","Had issues picking up due to defense
+",3,3,6,1,1,85.71,83.33,100,66.67
+7271,40,"b","b3",3,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"gordon","auton used to get closer to discs in neutral zone. other than that it just stayed in the path and did nothing
+",0,0,0,1,0,NA,100,100,100
+8512,40,"b","b1",1,TRUE,TRUE,"[]",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,2,"Zeb M","struggled for most of the match. Did get some notes in but only to the amp. Slow and obstructive.
+",1,0,1,1,0,100,0,100,0
+7503,40,"r","r1",2,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,10,0,FALSE,FALSE,1,1,5,5,"Duhe","very good speed, and excellent defense against 5411. 5411 was basically neutralized during the second half of teleop. seems not to have an intake. note fell on the ground during auton.
+",0,0,0,3,0,NA,100,100,100
+4153,40,"r","r3",3,TRUE,TRUE,"[]",0,0,0,0,0,0,1,4,0,3,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,3,3,3,3,"Pozo","Acted as a shuttle but kind of got in its teammates way. REd should have scored more. Notes kept getting stuck under bumper before fully intaking 
+",0,0,0,1,0,NA,100,100,100
+5411,40,"b","b2",4,TRUE,TRUE,"[]",0,1,1,0,0,0,4,2,1,1,2,0,3,3,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,5,4,"Pena","good speed and offence considering it was under constant defence and pressure. terrible with close range but excellent in far range
+",6,1,7,1,4,63.64,100,100,100
+5908,41,"r","r2",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,3,3,3,"Max","No show lmao
+",0,0,0,1,0,NA,100,100,100
+9105,41,"b","b2",1,TRUE,TRUE,"[1, 2, 3]",0,0,1,2,0,1,1,2,0,1,0,0,0,3,0,0,0,1,0,0,TRUE,5,0,FALSE,FALSE,1,3,3,4,"Pena","something was wrong with the shooter, so every shot missed; played good d however
+",3,3,6,3,5,54.55,100,100,100
+6672,41,"r","r3",2,TRUE,TRUE,"[8]",0,0,1,0,0,0,3,2,1,4,7,0,0,2,1,0,3,0,0,0,FALSE,0,0,FALSE,FALSE,4,4,5,5,"Pozo","Great bot. Worked well against defense. Tried to rush some shots
+",5,1,6,1,2,75,50,100,40
+9492,41,"r","r1",1,TRUE,FALSE,"[]",0,0,0,0,0,0,8,0,0,1,5,0,0,4,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,3,4,3,3,"sahil","nothing special, but its shooter was a little inaccurate and they didnt go for amps, nor were they able to climb despite having plenty of time.
+",4,0,4,1,4,50,100,100,100
+4251,41,"b","b1",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Henry Horvat","Had trouble lining up with speaker and source, likely due to driver inexp. and bad controls. light and easily pushed around... so no defense.
+",3,0,3,1,3,50,100,100,100
+7506,41,"b","b3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,FALSE,0,0,FALSE,FALSE,1,1,2,1,"Poon","1 note auto. Slow robot. Extremely troublesome ""scooping"" intake needs specific conditions before able to intake (slow). Missed its one shot in the game at the amp. Blocked 9105 from scoring at amp as well (slow shooting, and skill issue on part of the driver).
+",0,1,1,1,1,50,100,100,100
+9081,42,"b","b2",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Pena","bot did not move at all just jerked a little from driver's control
+",0,0,0,1,0,NA,100,100,100
+2687,42,"r","r3",2,TRUE,TRUE,"[]",0,0,1,0,0,0,0,1,0,4,1,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,TRUE,4,4,4,4,"Pozo","Took major collision under stage and stopped moving. Started as a passer to 3005 who camped in red territory. Intake is more traditional with a mechanism that come out of the robot and takes in the note instead of driving over it 
+",0,1,1,1,0,100,100,100,100
+4295,42,"r","r2",3,TRUE,FALSE,"[]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,1,1,1,1,"Max","Tried playing defense but could not do it well due to jank shooter / arm. Not a very stable bot - the status light seemed to be struggling to stay alive. L
+",0,0,0,1,0,NA,100,100,100
+9088,42,"b","b1",4,TRUE,TRUE,"[2]",0,0,2,0,0,0,3,0,0,3,6,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,5,4,4,3,"Henry Horvat","overall good, but bad at countering defense. took too long at end at source and missed parking/climbing.
+",0,2,2,1,0,100,100,100,100
+3005,42,"r","r1",1,TRUE,TRUE,"[1, 2, 4, 5, 6]",0,0,6,0,0,0,9,0,0,0,2,0,0,0,0,0,3,0,0,0,TRUE,2,0,FALSE,FALSE,3,5,4,5,"sahil","shooter was amazing and accurate but it broke half way through so it started playing offense. good offense.
+",3,6,9,3,0,100,66.67,100,0
+7540,42,"b","b3",2,TRUE,FALSE,"[]",0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,FALSE,0,0,FALSE,FALSE,2,1,2,3,"Poon","Kind of died in the middle of the match (unplugged or battery outage?) Penalty because two notes at the same time. Not much shooting going on. 
+",0,1,1,1,0,100,100,100,100

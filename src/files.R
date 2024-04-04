@@ -36,9 +36,9 @@ createFile <- function(fileName) {
 saveAllData <- function() {
   # Saving all of the various active dataframes
   write.csv(vals$mainframe, paste0(path, "mainframe.csv"), row.names = FALSE)
-  write.csv(vals$scheduleframe, paste0(path, "schedule.csv"), row.names = FALSE)
+  write.csv(vals$scheduleframe, paste0(path, "scheduleframe.csv"), row.names = FALSE)
   write.csv(vals$teamframe, paste0(path, "teamframe.csv"), row.names = FALSE)
-  write.csv(vals$teammatchesframe, paste0(path, "teammatchesframe.csv"), row.names = FALSE)
+ # write.csv(vals$teammatchesframe, paste0(path, "teammatchesframe.csv"), row.names = FALSE)
   
   
   # Gathering the date and time to name the new folder for the data backup
@@ -59,9 +59,9 @@ saveAllData <- function() {
   
   # Saving the active dataframes in the new backup folder
   write.csv(vals$mainframe, paste0(newPath, "mainframe.csv"), row.names = FALSE)
-  write.csv(vals$scheduleframe, paste0(newPath, "schedule.csv"), row.names = FALSE)
+  write.csv(vals$scheduleframe, paste0(newPath, "scheduleframe.csv"), row.names = FALSE)
   write.csv(vals$teamframe, paste0(newPath, "teamframe.csv"), row.names = FALSE)
-  write.csv(vals$teammatchesframe, paste0(newPath, "teammatchesframe.csv"), row.names = FALSE)
+#  write.csv(vals$teammatchesframe, paste0(newPath, "teammatchesframe.csv"), row.names = FALSE)
 }
 
 
