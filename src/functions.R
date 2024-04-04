@@ -205,54 +205,61 @@ getSchedule <- function() {
                          blue3 = c()
   )
   
-  for(m in 1:length(matches)) {
-    print(matches)
-    if(matches[[m]]$comp_level == "qm") {
-      curmatch <- matches[[m]]
+  
+  withProgress(message = "Getting Schedule", {
+    
+    n <- length(matches)
+    
+    for(m in 1:n) {
+      if(matches[[m]]$comp_level == "qm") {
+        curmatch <- matches[[m]]
+        
+        df <- data.frame(round = c(),
+                         match_number = c(),
+                         red1 = c(),
+                         red2 = c(),
+                         red3 = c(),
+                         blue1 = c(),
+                         blue2 = c(),
+                         blue3 = c()
+        )
+        
+        
+        r1 <- curmatch$alliances$red$team_keys[[1]]
+        r2 <- curmatch$alliances$red$team_keys[[2]]
+        r3 <- curmatch$alliances$red$team_keys[[3]]
+        
+        b1 <- curmatch$alliances$blue$team_keys[[1]]
+        b2 <- curmatch$alliances$blue$team_keys[[2]]
+        b3 <- curmatch$alliances$blue$team_keys[[3]]
+        
+        r1 <- as.integer(substr(r1, 4, 7))
+        r2 <- as.integer(substr(r2, 4, 7))
+        r3 <- as.integer(substr(r3, 4, 7))
+        
+        b1 <- as.integer(substr(b1, 4, 7))
+        b2 <- as.integer(substr(b2, 4, 7))
+        b3 <- as.integer(substr(b3, 4, 7))
+        
+        mNum <- as.integer(curmatch$match_number)
+        
+        df <- data.frame(round = c("qf"),
+                         match_number = c(mNum),
+                         red1 = c(r1),
+                         red2 = c(r2),
+                         red3 = c(r3),
+                         blue1 = c(b1),
+                         blue2 = c(b2),
+                         blue3 = c(b3)
+        )
+        length(matches)   
+        schedule <- rbind(schedule, df)
+      }
       
-      df <- data.frame(round = c(),
-                       match_number = c(),
-                       red1 = c(),
-                       red2 = c(),
-                       red3 = c(),
-                       blue1 = c(),
-                       blue2 = c(),
-                       blue3 = c()
-      )
+      incProgress(1/n, detail = paste("Match", m))
       
-      print(curmatch)
-      
-      r1 <- curmatch$alliances$red$team_keys[[1]]
-      r2 <- curmatch$alliances$red$team_keys[[2]]
-      r3 <- curmatch$alliances$red$team_keys[[3]]
-      
-      b1 <- curmatch$alliances$blue$team_keys[[1]]
-      b2 <- curmatch$alliances$blue$team_keys[[2]]
-      b3 <- curmatch$alliances$blue$team_keys[[3]]
-      
-      r1 <- as.integer(substr(r1, 4, 7))
-      r2 <- as.integer(substr(r2, 4, 7))
-      r3 <- as.integer(substr(r3, 4, 7))
-      
-      b1 <- as.integer(substr(b1, 4, 7))
-      b2 <- as.integer(substr(b2, 4, 7))
-      b3 <- as.integer(substr(b3, 4, 7))
-      
-      mNum <- as.integer(curmatch$match_number)
-      
-      df <- data.frame(round = c("qf"),
-                       match_number = c(mNum),
-                       red1 = c(r1),
-                       red2 = c(r2),
-                       red3 = c(r3),
-                       blue1 = c(b1),
-                       blue2 = c(b2),
-                       blue3 = c(b3)
-      )
-      
-      schedule <- rbind(schedule, df)
     }
-  }
+  })
   
   schedule2 <- schedule[order(schedule$match_number), ]
   return(schedule2)
@@ -277,28 +284,34 @@ getTeams <- function() {
   
   statlist <- vals$teamframeTemplate
   
-  for(t in 1:length(teams)) {
+  withProgress(message = "Getting Teams List", {
     
-    tNum <- as.integer(teams[[t]]$team_number[1])
+    n <- length(teams)
     
-    team <- data.frame(
-      teamNum = c(tNum),
-      EPA = c(getEPA(tNum)),
-      aS = c(0),
-      aSa = c(0),
-      aSt = c(0),
-      aPPE = c(0),
-      speak = c(0),
-      speakA = c(0),
-      speakT = c(0),
-      aT = c(0),
-      CT = c(0)
-    )
-    
-    statlist <- rbind(statlist, team)
-  
-     
-  }
+    for(t in 1:n) {
+      
+      tNum <- as.integer(teams[[t]]$team_number[1])
+      
+      team <- data.frame(
+        teamNum = c(tNum),
+        EPA = c(getEPA(tNum)),
+        aS = c(0),
+        aSa = c(0),
+        aSt = c(0),
+        aPPE = c(0),
+        speak = c(0),
+        speakA = c(0),
+        speakT = c(0),
+        aT = c(0),
+        CT = c(0)
+      )
+      
+      statlist <- rbind(statlist, team)
+      
+      incProgress(1/n, detail = paste("Team", tNum))
+      
+    }
+  })
 
   return(statlist)
   
@@ -393,7 +406,7 @@ loadData <- function() {
   if(file.exists(paste0(path, "teammatches.csv"))) {
     vals$teammatchesframe <- read.csv(paste0(path, "teammatches.csv"))
   } else {
-    getTeamMatches()
+  #  getTeamMatches()
   }
   
 }
